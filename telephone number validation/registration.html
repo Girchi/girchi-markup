@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8">
+  <title>International Telephone Input</title>
+  <link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+
+  
+  
+  <body class="flex items-center gap-6 justify-center min-h-screen flex-col bg-[#E5E5E5] ">
+    <form method="post">
+    <div class="isolate relative pt-0 px-0 pb-[24px] bg-white w-[432px] h-[1400px] rounded-lg">
+  <div class="flex flex-row justify-between items-center pt-[12px] px-[12px] bg-[24px] gap-10 max-w-[432px] h-[60px] rounded-tl bg-white shadow-inner">
+    <h1 class="w-[101px] h-[28px] not-italic  font-semibold text-[20px]  text-[#121212] pl-[10px] pt-[px] pb-[10px]">რეგისტრაცია</h1>
+    <a href=""><div class=""><img class=" pr-[20px]" src="../assets/Vector.png"></div></a>
+  </div>
+  <form method="post" action="">
+   
+    <div class="flex flex-col mb-[10px]  m-auto items-center pt-[30px]">
+  
+      <label class="pr-[319px]" type="text" for="email">სახელი</label>
+  <input type="text" id="name" class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" name="email" placeholder="შეიყვანე სახელი" required>
+  </div>
+  
+  <div class="flex flex-col mb-[10px]  m-auto items-center pt-[30px]">
+      <label class="pr-[327px]" type="text" for="password">გვარი</label>
+  
+  <input type="text"  class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" placeholder="შეიყვანე გვარი" required>
+  </div>
+  
+  <div class="flex flex-col mb-[10px]  m-auto items-center pt-[30px]">
+  
+    <label class="pr-[250px]" type="text" for="">პირადი ნომერი</label>
+  <input type="text" id="name" class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" name="email" placeholder="შეიყვანე პირადი ნომერი" required>
+  </div>
+  
+  
+  <div class="flex flex-col mb-[10px]  m-auto items-center pt-[30px]">
+    <label class="pr-[290px]" type="text" for="">ტელეფონი</label>
+    <input class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" id="phone" name="phone" type="tel" required>
+  </div>
+  
+  <div class="flex flex-col mb-[10px]  m-auto items-center pt-[30px]">
+  
+    <label class="pr-[290px]" type="text" for="">ელ.ფოსტა</label>
+  <input type="text" id="name" class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" name="email" placeholder="შეიყვანეთ ელ.ფოსტა" required>
+  </div>
+
+
+  <div class="flex flex-col mb-[10px]  m-auto items-center pt-[30px]">
+  
+    <label class="pr-[310px]" type="password" for="password">პაროლი</label>
+  <input type="password" id="name" class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" name="email" placeholder="შეიყვანეთ პაროლი" required>
+  </div>
+
+  <div class="flex flex-col mb-[10px]   m-auto  items-center pt-[30px]">
+  
+    <label class="pr-[210px]" type="password" for="password">გაიმეორეთ პაროლი</label>
+  <input type="password" id="name" class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" name="email" placeholder="შეიყვანეთ პაროლი" required>
+  </div>
+
+
+  <div class="flex flex-col   m-auto items-center pt-[30px]">
+  <label class="pr-[310px] " type="text" for="">რეგიონი</label>
+  </div>
+  <div class="flex flex-col mb-[10px]  m-auto items-center pt-[0px] text-[14px] text-[#727A82]">
+  <select id="countries" class=" bg-white border border-[#E0E2E7]  text-sm block w-[384px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] rounded-[6px] text-[#727A82]">
+    <option selected><h2 class="text-[14px] ">აირჩიე რეგიონი</h1></option>
+    <option value="US"></option>
+    <option value="CA"></option>
+    <option value="FR"></option>
+    <option value="DE"></option>
+  </select>
+</div>
+
+<div class="flex flex-col mb-[10px]   m-auto  items-center pt-[30px]">
+  
+  <label class="pr-[300px]" type="password" for="password">Instagram</label>
+<input type="password" id="name" class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" name="email" placeholder="https://" required>
+</div>
+
+<div class="flex flex-col mb-[10px]   m-auto  items-center pt-[30px]">
+  
+  <label class="pr-[300px]" type="password" for="password">Facebook</label>
+<input type="password" id="name" class="w-[384px] rounded-[6px] pt-[10px] pr-[10px] pb-[10px] pl-[12px] border border-[#E0E2E7]" name="email" placeholder="https://" required>
+</div>
+
+  <div class="flex flex-row pl-[27px] items-center pt-[10px]">
+  <input type="checkbox" class="accent-[#1A8917] w-[18px] h-[18px] rounded-[3px]" value="lsRememberMe" id="rememberMe">
+  <label class="pl-[10px]  text-[#727A82] text-[14px]" for="rememberMe">ვეთანხმები რეგისტრაციის <a class="text-[#4D73FA]" href="">წესებსა და პირობებს</a></label>
+  </div>
+  
+ 
+  <style>
+    .shadow-inner{
+      box-shadow: inset 0px -1px 0px #E0E2E7;
+  border-radius: 8px 8px 0px 0px;
+  
+    }
+  </style>
+  
+  
+  <div class="flex content-center items-center w-[384px] h-[48px] text-[#fff] bg-[#1A8917] rounded-[56px] m-auto mt-[24px] "><button type="submit" class="mx-auto">რეგისტრაცია</button></div>
+  </form>
+  <div class="relative flex items-center py-5">
+      <div class="flex-grow border-t border-[#E0E2E7]"></div>
+      <span class="flex-shrink mx-4 text-[#292D33]">გაქვს ანგარიში?
+      </span>
+      <div class="flex-grow border-t border-[#E0E2E7]"></div>
+  
+  </div>
+  <div class="flex content-center items-center w-[384px] h-[48px] text-[#292D33] bg-[#F3F3F4] rounded-[56px] m-auto mt-[2px]"><h1 class="mx-auto"><a href="../src/authorization.html">ავტორიზაცია</a></h1></div>
+    </div>
+  
+  <script src="build/js/intlTelInput.js"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "build/js/utils.js",
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'TBCContractica';
+    src:  url('../font/TBCContractica-Regular.ttf')
+}
+
+@layer base {
+
+    p,h1,h2,h3,h4,h5,h6,a{
+        font-family: 'TBCContractica';
+    }
+}
+
+.active-btn {
+    background-color: white;
+    color: #292D33;
+}
+
+.label {
+    position: relative;
+}
+
+.sticky-container.active {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+.sticky-container.absolute {
+    position: absolute;
+    background-color: #FFFFFF;
+    transform: translateY(-100%);
+    
+}
+
+.sticky-container.active .sticky-hidden{
+    display: none;
+}
+
+.sticky-container.active-about{
+    position:fixed;
+    top:0;
+    z-index:1;
+    background-color: transparent;
+
+}
+.sticky-container.active-about .sticky-hidden{
+    display: none;
+}

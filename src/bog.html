@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საქართველოს დაბადება</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-midGray grid justify-center overflow-x-hidden">
+
+
+    <nav class="bg-white py-[16px] shadow-md w-screen">
+        <div class="flex mx-auto max-w-[1344px] justify-between">
+            <div>
+                <a href="index.html" class="flex gap-[16px] ">
+                    <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.6288 2.91765C23.0189 3.38824 22.7751 4.09412 22.1899 4.23529C20.9706 4.61176 19.7514 5.03529 18.5322 5.50588C17.7519 5.78824 16.9228 5.78824 16.1425 5.50588C14.9233 5.03529 13.7041 4.61176 12.4849 4.23529C11.8996 4.04706 11.6558 3.34118 12.0459 2.91765C13.5578 1.22353 15.3622 0.0470588 17.2154 0H17.5081C19.3125 0.0470588 21.117 1.17647 22.6288 2.91765ZM2.68229 30.0706C2.29214 30.5412 1.51184 30.4471 1.26799 29.9294C0.43892 28.3765 0 26.8235 0 25.4118C0 24.8 0.0487689 24.1882 0.0975379 23.5765C0.146307 22.9647 0.829072 22.5882 1.4143 22.8235C2.92614 23.4824 4.43797 24.1882 5.94981 24.9882C6.53504 25.2706 6.58381 26.0235 6.14489 26.4471C4.92566 27.6235 3.75521 28.8471 2.68229 30.0706ZM14.4844 6.21176C14.9233 6.35294 14.9721 6.96471 14.5331 7.2C11.8509 8.47059 9.21733 9.97647 6.63258 11.6706C6.29119 11.9059 5.8035 11.5765 5.94981 11.2C6.04735 10.8235 6.19366 10.4471 6.33996 10.1176C6.87642 8.61176 7.55919 7.10588 8.29072 5.69412C8.6321 5.03529 9.41241 4.70588 10.1439 4.89412C11.5582 5.27059 13.0213 5.69412 14.4844 6.21176ZM10.973 37.3647C10.4853 37.9294 9.65625 38.1176 9.02226 37.7412C6.87642 36.5647 4.92566 34.9647 3.41383 33.1294C2.92614 32.5647 2.97491 31.7647 3.41383 31.2C4.63305 29.7882 5.90104 28.4235 7.26657 27.1059C7.80303 26.5882 8.6321 26.5412 9.2661 26.9176C11.3632 28.2353 13.4115 29.6471 15.3622 31.2C15.8987 31.6235 15.8987 32.3765 15.411 32.8471C13.8504 34.2588 12.3385 35.7647 10.973 37.3647ZM15.0208 17.9294C15.5573 18.2118 15.5573 18.9176 15.0696 19.2471C12.9725 20.6588 10.9242 22.1647 8.97349 23.8588C8.38826 24.3294 7.55919 24.4235 6.92519 24.0941C5.6572 23.3882 4.34044 22.7765 3.07244 22.1647C2.38968 21.8353 1.90199 21.1765 1.99953 20.4235C2.1946 18.4 2.68229 16.2824 3.31629 14.2588C3.51136 13.6 4.2429 13.2706 4.92566 13.5059C5.21828 13.6 5.51089 13.6941 5.85227 13.8353C8.92472 14.8706 12.0459 16.2353 15.0208 17.9294ZM31.9437 30.0706C32.3338 30.5412 33.1141 30.4471 33.358 29.9294C34.187 28.3765 34.626 26.8235 34.626 25.4118C34.626 24.8 34.5772 24.1882 34.5284 23.5765C34.4796 22.9647 33.7969 22.5882 33.2117 22.8235C31.6998 23.4824 30.1392 24.1882 28.6761 24.9882C28.0909 25.2706 28.0421 26.0235 28.4811 26.4471C29.7003 27.6235 30.8707 28.8471 31.9437 30.0706ZM20.1416 6.21176C19.7027 6.35294 19.6539 6.96471 20.0928 7.2C22.7751 8.47059 25.4086 9.97647 27.9934 11.6706C28.3348 11.9059 28.8224 11.5765 28.6761 11.2C28.5786 10.8235 28.4323 10.4471 28.286 10.1176C27.7495 8.61176 27.0668 7.10588 26.3352 5.69412C25.9939 5.03529 25.2135 4.70588 24.482 4.89412C23.0677 5.27059 21.6046 5.69412 20.1416 6.21176ZM19.6051 17.9294C19.0687 18.2118 19.0687 18.9176 19.5563 19.2471C21.6534 20.6588 23.7017 22.1647 25.6525 23.8588C26.2377 24.3294 27.0668 24.4235 27.7008 24.0941C28.9688 23.3882 30.2855 22.7765 31.5535 22.1647C32.2363 21.8353 32.724 21.1765 32.6264 20.4235C32.4314 18.4 31.9437 16.2824 31.3097 14.2588C31.1146 13.6 30.3831 13.2706 29.7003 13.5059C29.4077 13.6 29.1151 13.6941 28.7737 13.8353C25.7012 14.8706 22.6288 16.2353 19.6051 17.9294ZM17.313 40C15.7524 40 14.143 39.7647 12.5824 39.2471C11.9972 39.0588 11.8021 38.3529 12.1922 37.8824C13.509 36.4235 14.9233 35.0118 16.3864 33.6471C16.9228 33.1765 17.7519 33.1765 18.2884 33.6471C19.7514 35.0118 21.1657 36.4235 22.4825 37.8824C22.8726 38.3529 22.6776 39.0588 22.0923 39.2471C20.483 39.7647 18.8736 40 17.313 40ZM25.6037 37.7412C24.9697 38.1176 24.1406 37.9294 23.6529 37.3647C22.2874 35.8118 20.7756 34.3059 19.215 32.8471C18.7273 32.3765 18.7273 31.6235 19.2637 31.2C21.2145 29.6471 23.2628 28.1882 25.3599 26.9176C25.9939 26.5412 26.8229 26.5882 27.3594 27.1059C28.7249 28.4235 30.0417 29.7882 31.2121 31.2C31.6998 31.7647 31.6998 32.5647 31.2121 33.1294C29.7003 34.9176 27.7495 36.5176 25.6037 37.7412ZM18.2884 30.3529C17.7519 30.8235 16.9228 30.8235 16.3376 30.3529C14.3868 28.8 12.3385 27.3412 10.2415 25.9765C9.70502 25.6471 9.65625 24.8941 10.1439 24.4706C12.0947 22.8235 14.143 21.3176 16.2401 19.9529C16.8741 19.5294 17.7519 19.5294 18.3859 19.9529C20.5317 21.3176 22.58 22.8706 24.482 24.5176C24.9697 24.9412 24.9209 25.6471 24.3845 26.0235C22.2874 27.3412 20.2391 28.8 18.2884 30.3529ZM18.3859 17.1765C17.7031 17.5529 16.8741 17.5529 16.1913 17.1765C13.6553 15.6706 10.973 14.4 8.29072 13.3647C7.80303 13.1765 7.70549 12.5176 8.14441 12.1882C10.7292 10.4941 13.4115 9.03529 16.1425 7.81176C16.8741 7.48235 17.7519 7.48235 18.4834 7.81176C21.2145 9.03529 23.8968 10.4941 26.4815 12.1882C26.9205 12.4706 26.8717 13.1294 26.3352 13.3647C23.6529 14.4 21.0194 15.6706 18.3859 17.1765Z"
+                            fill="#1A8917" />
+                    </svg>
+                    <span class="self-center text-greenText font-[700] mr-8 text-2xl">გირჩი</span>
+                </a>
+            </div>
+            <div class="flex gap-[32px]z">
+                <ul class="flex mt-2 gap-6 font-medium text-sm ">
+                    <li>
+                        <a href="#" class="text-black">პოლიტიკოსები</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">ანალიტიკა</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">სიახლეები</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">პროექტები</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black">გაზეთი</a>
+                    </li>
+                </ul>
+                <button
+                    class="bg-greenButton ml-[32px] text-white text-center py-[12px] px-[32px] rounded-full text-sm">
+                    ავტორიზაცია
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="rounded-lg overflow-hidden mt-[32px] mx-auto max-w-[1344px] shadow-md">
+            <div>
+                <img src="../assets/Cover Photo.png" alt="Cover photo" width="1344" height="378">
+                <div class="flex justify-between">
+                    <div
+                        class="-mt-[134px] ml-[32px] rounded-[12px] overflow-hidden border-[6px] border-white shadow-md">
+                        <img src="../assets/Frame.jpg" alt="Profile photo" width="180" height="180">
+                    </div>
+                    <div class="flex gap-[16px] mt-[6px] mr-[25px]">
+                        <svg width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 40V0H30V40L15 30.6122L0 40Z" fill="#F95A64" />
+                        </svg>
+                        <svg width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 40V0H30V40L15 30.6122L0 40Z" fill="#2F69FF" />
+                        </svg>
+                        <svg width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 40V0H30V40L15 30.6122L0 40Z" fill="#1A8917" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="bg-white -mt-[55px]">
+                    <div class="ml-[32px] pt-[107px] mr-[25px]">
+                        <div class="flex gap-[8px]">
+                            <span class="text-[24px] text-lightBlack font-[700]">ერმალო მელექსე</span>
+                            <div class="grid place-items-center">
+                                <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.6693 14L26.4159 10.28L26.8693 5.36L22.0559 4.26667L19.5359 0L15.0026 1.94667L10.4693 0L7.94927 4.25333L3.13594 5.33333L3.58927 10.2667L0.335938 14L3.58927 17.72L3.13594 22.6533L7.94927 23.7467L10.4693 28L15.0026 26.04L19.5359 27.9867L22.0559 23.7333L26.8693 22.64L26.4159 17.72L29.6693 14Z"
+                                        fill="#2F69FF" />
+                                </svg>
+                                <span class="text-white absolute text-center">1</span>
+                            </div>
+                        </div>
+                        <div class="mt-[4px]">
+                            <span class="text-lightGray">6,104 რეფერალი</span>
+                            <span class="text-lightGray">•</span>
+                            <span class="text-lightGray">6,104 მხარდამჭერი</span>
+                        </div>
+                        <div class="flex mt-[16px] justify-between">
+                            <div>
+                                <button class="bg-greenButton text-white text-center py-[12px] px-[32px] rounded-full">
+                                    დამაფინანსე
+                                </button>
+                            </div>
+                            <div class="flex gap-[32px]">
+                                <div class="px-[32px]">
+                                    <span class="text-[24px] text-lightBlack font-[700] leading-[2rem]">22562123</span>
+                                    <div>
+                                        <span class="text-lightGray">პოლიტიკური წონა</span>
+                                    </div>
+                                </div>
+                                <div class="px-[32px] border-x-[1px] border-borderGray">
+                                    <span class="text-[24px] text-lightBlack font-[700] leading-[2rem]">371377</span>
+                                    <div>
+                                        <span class="text-lightGray">გამომუშავებული GED</span>
+                                    </div>
+                                </div>
+                                <div class="px-[32px]">
+                                    <span class="text-[24px] text-lightBlack font-[700] leading-[2rem]">1039 ₾</span>
+                                    <div>
+                                        <span class="text-lightGray">რეფერალური სარგებელი</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-[24px] pb-[20px] border-t-[1px] -mx-[32px] border-borderGray">
+                            <div class="mx-[32px]">
+                                <ul
+                                    class="flex flex-row items-start mt-[20px] gap-[24px] font-[500] leading-[1.5rem] text-[14px] ">
+                                    <li>
+                                        <a href="#"
+                                            class="pb-[24px] border-greenButton border-b-[1px] text-greenButton">დაფინანსება</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-lightGray pb-[24px] border-greenButton hover:border-b-[1px] hover:text-greenButton">საიხლეები</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-lightGray pb-[24px] border-greenButton hover:border-b-[1px] hover:text-greenButton">ჩემ
+                                            შესახებ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-lightGray pb-[24px] border-greenButton hover:border-b-[1px] hover:text-greenButton">ჩემი
+                                            გუნდი</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-lightGray pb-[24px] border-greenButton hover:border-b-[1px] hover:text-greenButton">ღონისძიებები</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-lightGray pb-[24px] border-greenButton hover:border-b-[1px] hover:text-greenButton">ხშირად
+                                            დასმული კითხვები</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+
+    <section
+        class="bg-white mx-auto rounded-lg max-w-[1344px] mt-[32px] pl-[32px] pr-[32px] pt-[20px] mb-[288px] shadow-md">
+        <div class="border-b-[1px] border-borderGray -mx-[32px]">
+            <ul
+                class="flex flex-row pb-[20px] mx-[32px] items-start gap-[24px] font-[500] leading-[1.5rem] text-[14px] ">
+                <li>
+                    <a href="index.html"
+                        class="text-lightGray pb-[25px] border-greenButton hover:border-b-[1px] hover:text-greenButton">სულ</a>
+                </li>
+                <li>
+                    <a href="bog.html"
+                        class="pb-[25px] border-greenButton border-b-[1px] text-greenButton">საქართველოს
+                        დაბადება</a>
+                </li>
+                <li>
+                    <a href="cannabis-society.html"
+                        class="text-lightGray pb-[25px] border-greenButton hover:border-b-[1px] hover:text-greenButton">კანაფის
+                        საზოგადოება</a>
+                </li>
+                <li>
+                    <a href="financing.html"
+                        class="text-lightGray pb-[25px] border-greenButton hover:border-b-[1px] hover:text-greenButton">პოლიტიკოსის
+                        დაფინანსება</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="border-[1px] p-[32px] rounded-lg mt-[40px] border-borderGray">
+            <div class="flex justify-between pb-6 border-b-[1px] border-borderGray">
+                <div class="flex gap-[16px]">
+                    <div>
+                        <img src="../assets/Frame.jpg" width="52" height="52" class="rounded-full"
+                            alt="Profile picture">
+                    </div>
+                    <div>
+                        <span class="text-lightGray">ავტორი</span><br>
+                        <span class="text-[20px] text-lightBlack font-[700] leading-[2rem]">ერმალო მელექსე</span>
+                    </div>
+
+                </div>
+
+                <div class="flex gap-[32px]">
+                    <div class="pl-[32px] border-l-[1px] border-borderGray">
+                        <span class="text-lightGray">დაფინანსება</span><br>
+                        <span class="text-[20px] text-lightBlack font-[700] leading-[2rem]">12 125₾</span>
+                    </div>
+                    <div class="px-[32px] border-x-[1px] border-borderGray">
+                        <span class="text-lightGray">დამფინანსებლები</span><br>
+                        <span class="text-[20px] text-lightBlack font-[700] leading-[2rem]">1420</span>
+                    </div>
+                    <div class="pr-[32px] border-r-[1px] border-borderGray">
+                        <span class="text-lightGray">ხელმომწერები</span><br>
+                        <span class="text-[20px] text-lightBlack font-[700] leading-[2rem]">1420</span>
+                    </div>
+                </div>
+                <div class="flex gap-x-3 items-center">
+                    <a href="#">
+                        <button class="px-6 py-3 bg-lightBlack text-white rounded-full">
+                            დეტალურად ნახვა
+                        </button>
+
+                    </a>
+                    <a href="#">
+                        <img src="../assets/Share.svg" alt="sharing icon">
+                    </a>
+                </div>
+            </div>
+            <div class="pt-5">
+                <p>
+                    შშემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს,
+                    რეალურთან
+                    მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის სხვა
+                    შენ
+                    ტექსტის ბლოკი. სწორედ ასეთ... <a href="#"
+                        class="text-blue-600 hover:text-blue-800 visited:text-purple-600">სრულად</a>
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-between gap-[10px]">
+            <div class="flex bg-gray-100 mt-[32px] p-[4px] rounded-[8px] gap-[2px]">
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px] active-btn">დაფინანსება</button>
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">ხელმომწერები</button>
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">დამფინანსებლები</button>
+              </div>
+              <div class="flex bg-gray-100 mt-[32px] p-[4px] rounded-[8px] gap-[2px]">
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">1
+                  დღე</button>
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">7
+                  დღე</button>
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">1
+                  თვე</button>
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">3
+                  თვე</button>
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">6
+                  თვე</button>
+                <button
+                  class="text-lightGray hover:თვეtext-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px] active-btn">1
+                  წელი</button>
+                <button
+                  class="text-lightGray hover:text-lightBlack hover:bg-white rounded-[8px] text-[14px] px-[12px] py-[4px]">სულ</button>
+                <img src="../assets/Component 58.svg" alt="">
+
+
+
+            </div>
+        </div>
+        <div class="mt-[32px] overflow-hidden bg-white  ">
+            <canvas id="chartLine"></canvas>
+        </div>
+
+        <div class="rounded-lg border-[1px] border-borderGray my-12 p-8">
+            <div class="py-6  border-b-[1px] border-borderGray flex flex-col gap-3">
+                <h2 class="text-xl text-lightBlack font-bold">მხარი დაუჭირეთ სასურველ სტუმარს</h2>
+                <p class="text-lightBlack">
+                    ტექსტი რომელიც ხსნის თუ რა არის ეს ბლოკი, როგორ მუშაობს და რა უნდა ქნას მომხმარებელმა რომ ხმა მისცეს
+                    სასუველ კანდიდატს რადგანაცშემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                    ნაწარმის
+                    შემქმნელებს, რეალურთან მაქსიმალურად.
+                </p>
+            </div>
+            <form action="">
+
+                <ul class="my-5 flex flex-col gap-y-5">
+                    <li>
+                        <div class="p-5 relative">
+
+                            <div class="progress rounded-md pointer-events-none absolute bg-progress top-0 bottom-0 left-0 "
+                                style="width:95%">
+                            </div>
+                            <label for="guest1" class="flex justify-between">
+                                <div class="flex gap-x-5">
+                                    <input type="radio" name="guest" id="guest1">
+                                    <div>
+                                        <img src="../assets/unsplash_Qt0ogPnhGWY.svg" alt="img">
+                                    </div>
+                                    <div>
+                                        <p class="text-xl text-lightBlack">ირაკლი საფარელი</p>
+                                        <p class="text-lightGray">მინისტრი 90-იანებში . მოითხოვა: კარლო ანჩელოტი</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <p>
+                                        <span class="current-amount text-greenText">9500&#8382;</span> / <span
+                                            class="final-amount">10000&#8382;</span>
+                                    </p>
+                                    <p class="voice text-lightGray">25 ხმა</p>
+                                </div>
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="p-5 relative">
+
+                            <div class="progress rounded-md pointer-events-none absolute bg-progress top-0 bottom-0 left-0 "
+                                style="width:85%">
+                            </div>
+                            <label for="guest2" class="flex justify-between">
+                                <div class="flex gap-x-5">
+                                    <input type="radio" name="guest" id="guest2">
+                                    <div>
+                                        <img src="../assets/unsplash_Qt0ogPnhGWY1.svg" alt="img">
+                                    </div>
+                                    <div>
+                                        <p class="text-xl text-lightBlack">გიორგი კალატოზი</p>
+                                        <p class="text-lightGray">პოლიტიკოსი . მოითხოვა: კარლო ანჩელოტი</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <p>
+                                        <span class="current-amount text-greenText">7200&#8382;</span> / <span
+                                            class="final-amount">10000&#8382;</span>
+                                    </p>
+                                    <p class="voice text-lightGray">16 ხმა</p>
+                                </div>
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="p-5 relative">
+
+                            <div class="progress rounded-md pointer-events-none absolute bg-progress top-0 bottom-0 left-0 "
+                                style="width:55%">
+                            </div>
+                            <label for="guest3" class="flex justify-between">
+                                <div class="flex gap-x-5">
+                                    <input type="radio" name="guest" id="guest3">
+                                    <div>
+                                        <img src="../assets/unsplash_Qt0ogPnhGWY2.svg" alt="img">
+                                    </div>
+                                    <div>
+                                        <p class="text-xl text-lightBlack">ჯაბუა ამირეჯიბი</p>
+                                        <p class="text-lightGray">პოლიტიკოსი . მოითხოვა: კარლო ანჩელოტი</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <p>
+                                        <span class="current-amount text-greenText">6500&#8382;</span> / <span
+                                            class="final-amount">10000&#8382;</span>
+                                    </p>
+                                    <p class="voice text-lightGray">12 ხმა</p>
+                                </div>
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="p-5 relative">
+
+                            <div class="progress rounded-md pointer-events-none absolute bg-progress top-0 bottom-0 left-0 "
+                                style="width:35%">
+                            </div>
+                            <label for="guest4" class="flex justify-between">
+                                <div class="flex gap-x-5">
+                                    <input type="radio" name="guest" id="guest4">
+                                    <div>
+                                        <img src="../assets/unsplash_Qt0ogPnhGWY3.svg" alt="img">
+                                    </div>
+                                    <div>
+                                        <p class="text-xl text-lightBlack">უჯუშ ემხა</p>
+                                        <p class="text-lightGray">პოლიტიკოსი . მოითხოვა: კარლო ანჩელოტი</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <p>
+                                        <span class="current-amount text-greenText">4200&#8382;</span> / <span
+                                            class="final-amount">10000&#8382;</span>
+                                    </p>
+                                    <p class="voice text-lightGray">9 ხმა</p>
+                                </div>
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="p-5 relative">
+
+                            <div class="progress rounded-md pointer-events-none absolute bg-progress top-0 bottom-0 left-0 "
+                                style="width:20%">
+                            </div>
+                            <label for="guest5" class="flex justify-between">
+                                <div class="flex gap-x-5">
+                                    <input type="radio" name="guest" id="guest5">
+                                    <div>
+                                        <img src="../assets/unsplash_Qt0ogPnhGWY1.svg" alt="img">
+                                    </div>
+                                    <div>
+                                        <p class="text-xl text-lightBlack">გიორგი კალატოზი</p>
+                                        <p class="text-lightGray">პოლიტიკოსი . მოითხოვა: კარლო ანჩელოტი</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <p>
+                                        <span class="current-amount text-greenText">2500&#8382;</span> / <span
+                                            class="final-amount">10000&#8382;</span>
+                                    </p>
+                                    <p class="voice text-lightGray">8 ხმა</p>
+                                </div>
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="p-5 relative">
+                            <div class="progress rounded-md pointer-events-none absolute bg-progress top-0 bottom-0 left-0 "
+                                style="width:0%">
+                            </div>
+                            <label for="guest" class="flex justify-between">
+                                <div class="flex gap-x-5">
+                                    <input type="radio" name="guest" id="guest">
+                                    <div>
+                                        <img src="../assets/unsplash_Qt0ogPnhGWY2.svg" alt="img">
+                                    </div>
+                                    <div>
+                                        <p class="text-xl text-lightBlack">ოროჩა მანგა</p>
+                                        <p class="text-lightGray">პოლიტიკოსი . მოითხოვა: კარლო ანჩელოტი</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <p>
+                                        <span class="current-amount text-greenText">0&#8382;</span> / <span
+                                            class="final-amount">10000&#8382;</span>
+                                    </p>
+                                    <p class="voice text-lightGray">0 ხმა</p>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="py-5 flex justify-between">
+                    <button class="bg-greenButton px-8 py-3 rounded-full text-white" type="button">სტუმრის დამატება
+                        <span class="ml-3">+</span></button>
+                    <a href="#"><button class="bg-lightGrayButton px-8 py-3 rounded-full">ყველას ნახვა <span
+                                class="visitors">(53)</span></button></a>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!-- Chart line -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Chart line -->
+    <script>
+      const labels = ["January", "February", "March", "April", "May", "June"];
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: "GED",
+            backgroundColor: "hsla(118, 87%, 34%, 1)",
+            borderColor: "hsla(118, 87%, 34%, 1)",
+            data: [0, 10, 5, 2, 20, 30, 45,],
+          },
+        ],
+      };
+
+      const configLineChart = {
+        type: "line",
+        data,
+        options: {},
+      };
+
+      var chartLine = new Chart(
+        document.getElementById("chartLine"),
+        configLineChart
+      );
+    </script>
+</body>
+
+</html>
