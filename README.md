@@ -1,20 +1,20 @@
 # girchi-collab-ui
 
-[Home Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/index.html)
+[Home Page](https://girchi.github.io/girchi-markup/src/index.html)
 
-[Birth of Georgia Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/bog.html)
+[Birth of Georgia Page](https://girchi.github.io/girchi-markup/src/bog.html)
 
-[The Cannabis Society Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/cannabis-society.html)
+[The Cannabis Society Page](https://girchi.github.io/girchi-markup/src/cannabis-society.html)
 
-[The Cannabis Society financiers Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/cannabis-society-financiers)
+[The Cannabis Society financiers Page](https://girchi.github.io/girchi-markup/src/cannabis-society-financiers)
 
-[Politician financing Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/financing.html)
+[Politician financing Page](https://girchi.github.io/girchi-markup/src/financing.html)
 
-[Projects Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/projects.html)
+[Projects Page](https://girchi.github.io/girchi-markup/src/projects.html)
 
-[About Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/about.html)
+[About Page](https://girchi.github.io/girchi-markup/src/about.html)
 
-[Signature Page](https://giorgitchanturidze.github.io/girchi-collab-ui/src/signature.html)
+[Signature Page](https://girchi.github.io/girchi-markup/src/signature.html)
 
 
 Run TailwindCss
