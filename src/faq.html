@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <div class="min-h-screen bg-[#E5E5E5]" id="main-content">
+    <div class="min-h-screen w-full bg-[#E5E5E5]" id="main-content">
 
         <!-- main div -->
         <nav class=" bg-white py-4 px-8 shadow-md">
-            <div class="mx-auto flex max-w-[1344px] justify-between">
+            <div class="mx-auto md:flex lg:max-w-[1344px] hidden justify-between">
                 <div>
                     <a href="index.html" class="flex gap-4">
                         <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@
                     </a>
                 </div>
                 <div class="flex">
-                    <ul class="mt-2 flex gap-[32px] text-sm font-medium">
+                    <ul class="mt-2 flex gap-[32px] text-md font-medium">
                         <li>
                             <a href="#" class="text-black">პოლიტიკოსები</a>
                         </li>
@@ -48,20 +48,20 @@
                 </div>
                 <div>
                     <button
-                        class="ml-8 rounded-full bg-greenButton py-3 px-8 text-center text-sm font-medium text-white">ავტორიზაცია</button>
+                        class="ml-8 rounded-full hidden lg:block bg-greenButton py-3 px-8 text-center text-md font-medium text-white">ავტორიზაცია</button>
                 </div>
             </div>
         </nav>
 
         <!-- main div -->
         <div
-            class="mx-auto mt-[32px] pb-[118px] flex lg:max-w-[1344px] md:w-4/5 w-full flex-row justify-center gap-[24px]">
+            class="mx-auto mt-[32px] pb-[118px] flex lg:max-w-[1344px] lg:w-full md:w-[720px] w-[360px] flex-row justify-center gap-[24px]">
             <!-- left Card -->
             <div
-                class="lg:h-full hidden lg:block lg:w-[318px] rounded-[8px] shadow-[inset_0_-1px_0px_rgba(41,45,51,0.1)] bg-white">
+                class="hidden lg:block lg:w-[318px] lg:min-h-[416px] lg:h-full rounded-[8px] shadow-[inset_0_-1px_0px_rgba(41,45,51,0.1)] bg-white">
                 <div class="flex-row gap-4 p-[16px]">
                     <button
-                        class="h-[48px] w-full rounded-md bg-greenButton p-[12px] text-left text-sm font-medium text-white"><a
+                        class="h-[48px] w-full rounded-md bg-greenButton p-[12px] text-left text-md font-medium text-white"><a
                             href="#">პოპულარული კითხვები</a></button>
                     <ul>
                         <li class="p-[12px]"><a href="#"> სამხედრო გაწვევა</a></li>
@@ -114,17 +114,17 @@
                                 </svg>
                             </button>
                             <input type="search" id="search-input"
-                                class="w-full py-[10px] border-0 pr-[16px] text-[14px] font-medium leading-6 text-[#1B2127]"
+                                class="w-full outline-none py-[10px] border-0 pr-[16px] text-[14px] font-medium leading-6 text-[#1B2127] "
                                 placeholder="დაიწყე ძიება" />
                         </div>
                     </div>
 
                     <!-- acordion -->
-                    <div class="flex flex-col gap-[12px]">
+                    <div class="parentAcordion flex flex-col gap-[12px]">
                         <!-- #1 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-b border-b-[#E6E6E6] border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>ავსა კარგად ვერვინ შესცვლის, თავსა ახლად ვერვინ იშობს.</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -199,7 +199,7 @@
                         <!-- #2 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>ავსა კაცსა ავი სიტყვა ურჩევნია სულსა, გულსა?</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -274,7 +274,7 @@
                         <!-- #3 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>არ იცი, ვარდი უეკლოდ არავის მოუკრებიან!?</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -349,7 +349,7 @@
                         <!-- #4 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>არა შეჯდა მწყერი ხესა, არა იყო გვარი მისი?</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -424,7 +424,7 @@
                         <!-- #5 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>ასი ათასსა აჯობებს, თუ გამორჩევით მქმნელია?</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -499,7 +499,7 @@
                         <!-- #6 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>განგებასა ვერვინ შეცვლის, არ-საქმნელი არ იქმნების.</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -574,7 +574,7 @@
                         <!-- #7 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>დიდი ლხინია ჭირთა თქმა, თუ კაცსა მოუხდებოდეს?</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -649,7 +649,7 @@
                         <!-- #8 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>ბევრის მდომმა ცოტაც დაკარგაო?</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -724,7 +724,7 @@
                         <!-- #9 acord -->
                         <div class="accordion" class="active:bg-gray-300">
                             <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
+                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
                                 <span>ბებიას გამომცხვარი კვერი ტკბილია?</span>
                                 <svg data-accordion-icon
                                     class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
@@ -800,8 +800,9 @@
 
                     <!-- add questions + -->
                     <!-- Modal toggle -->
-                    <div class="flex h-[40px] w-[178px] rounded-full bg-[#F5F5F5] py-[8px] px-[20px]">
-                        <button class="inline-flex" type="button" data-modal-toggle="defaultModal">
+                    <div
+                        class="flex h-[40px] md:w-[178px] w-full justify-center md:justify-start rounded-full bg-[#F5F5F5] py-[8px] px-[20px]">
+                        <button class="inline-flex flex-none " onclick="toggleModal()">
                             <p class="self-center text-[14px] font-medium leading-6">კითხვის დასმა</p>
                             <p class="mx-[10px] self-center text-2xl">+</p>
                         </button>
@@ -812,77 +813,147 @@
         </div>
 
         <!-- Main modal -->
-        <div id="defaultModal" tabindex="-1" aria-hidden="true"
-            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-modal md:h-full justify-center items-center">
-            <div class="relative md:w-[432px]  border-[1px] border-[#E6E6E6]">
-                <!-- Modal content -->
-                <div class="relative bg-white rounded-lg">
-                    <!-- Modal header -->
-                    <div class="flex justify-between items-start py-4 px-5 rounded-t border-b">
-                        <h3 class="text-base font-medium">
-                            შენი კითხვა
-                        </h3>
-                        <button type="button" class="text-[#6F7680]" data-modal-toggle="defaultModal">
-                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
+        <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modal">
+            <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center md:block md:p-0">
+                <div class="fixed inset-0 transition-opacity">
+                    <div class="absolute inset-0 bg-gray-900 opacity-75">
                     </div>
-                    <!-- Modal body -->
-                    <div class="px-5 pt-[24px] pb-6">
-                        <div class=" flex flex-col gap-[25px]">
-                            <div class="flex">
-                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                    შეიყვანე შენი კითხვა და გიპასუხებთ მეილზე
-                                </p>
-                            </div>
-                            <div>
-                                <label for="input-group-1"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">ელფოსტა</label>
-                                <div class="relative">
-                                    <div
-                                        class="flex absolute inset-y-0 left-0 items-center pl-[13px] py-[10px] pointer-events-none gap-2">
-                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M15.6665 13.6666H2.33317C1.4127 13.6666 0.666504 12.9205 0.666504 12V1.92748C0.705344 1.03544 1.44028 0.332469 2.33317 0.333314H15.6665C16.587 0.333314 17.3332 1.07951 17.3332 1.99998V12C17.3332 12.9205 16.587 13.6666 15.6665 13.6666ZM2.33317 3.55665V12H15.6665V3.55665L8.99984 7.99998L2.33317 3.55665ZM2.99984 1.99998L8.99984 5.99998L14.9998 1.99998H2.99984Z"
-                                                fill="#1B2127" />
-                                        </svg>
+                    <span class="hidden md:inline-block md:align-middle md:h-screen">&#8203;</span>
+                    <div class="inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-24 md:my-8 w-[360px] md:align-middle md:max-w-[432px] md:w-full"
+                        role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                        <!-- Modal header -->
+                        <div class="flex items-start justify-between rounded-t border-b py-4 px-5">
+                            <h3 class="text-base font-medium">შენი კითხვა</h3>
+                            <button type="button" class="text-[#6F7680]" onclick="
+                        toggleModal()"><i class="fas fa-times"></i>
+                                <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="px-5 pt-[24px] pb-6">
+                            <div class="flex flex-col gap-[25px]">
+                                <div class="flex">
+                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">შეიყვანე შენი
+                                        კითხვა და გიპასუხებთ მეილზე</p>
+                                </div>
+                                <div>
+                                    <label for="website-admin "
+                                        class="mb-2 block text-md font-medium text-gray-900 ">ელფოსტა</label>
+                                    <div class="flex border rounded-lg">
+                                        <span
+                                            class="inline-flex items-center text-md text-gray-900 rounded-l-md gap-2 py-[10px] pl-[13px]">
+                                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.6665 13.6666H2.33317C1.4127 13.6666 0.666504 12.9205 0.666504 12V1.92748C0.705344 1.03544 1.44028 0.332469 2.33317 0.333314H15.6665C16.587 0.333314 17.3332 1.07951 17.3332 1.99998V12C17.3332 12.9205 16.587 13.6666 15.6665 13.6666ZM2.33317 3.55665V12H15.6665V3.55665L8.99984 7.99998L2.33317 3.55665ZM2.99984 1.99998L8.99984 5.99998L14.9998 1.99998H2.99984Z"
+                                                    fill="#1B2127" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" id="website-admin"
+                                            class="text-gray-900 outline-0	min-w-0 w-full text-md  p-2.5 "
+                                            placeholder="შენი ელფოსტა">
                                     </div>
-                                    <input type="text" id="input-group-1"
-                                        class="border border-gray-300  text-sm rounded-lg block w-full pl-10 p-2.5  "
-                                        placeholder="შენი ელფოსტა">
                                 </div>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="flex justify-between">
-                                    <p>კითხვა</p>
-                                    <p>0/300</p>
+
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between">
+                                        <p>კითხვა</p>
+                                        <p>0/300</p>
+                                    </div>
+                                    <textarea id="message" rows="2"
+                                        class="block w-full text-[#1B2127] outline-0 rounded-lg border border-[#E0E2E7] p-4 text-md"
+                                        placeholder="დაწერე შენი კითხვა"></textarea>
                                 </div>
-                                <textarea id="message" rows="2"
-                                    class="block p-4 w-full text-sm rounded-lg border border-[#E0E2E7]"
-                                    placeholder="დაწერე შენი კითხვა"></textarea>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="flex items-center px-5 py-4 flex-row-reverse gap-2 rounded-b border">
-                        <button data-modal-toggle="defaultModal" type="button"
-                            class="bg-greenButton text-white focus:outline-none font-medium text-base rounded-[32px] px-5 py-2.5 text-center">კითხვის
-                            გაგზავნა</button>
-                        <button data-modal-toggle="defaultModal" type="button"
-                            class="text-[#1B2127] bg-white focus:outline-none text-base font-medium px-5 py-2.5">გაუქმება</button>
+                        <!-- Modal footer -->
+                        <div class="flex flex-row justify-end gap-2 rounded-b border-t px-5 py-4">
+                            <button type="button"
+                                class="bg-white px-5 py-2.5 text-base font-medium text-[#1B2127] focus:outline-none"
+                                onclick="
+                            toggleModal()"><i class="fas fa-times"></i>გაუქმება</button>
+                            <button type="button"
+                                class="rounded-[32px] bg-greenButton px-4 py-2 text-center text-base font-medium text-white focus:outline-none"
+                                onclick="toggleModalSubmit()"><i class="fas fa-times"></i> კითხვის
+                                გაგზავნა</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
+        <!-- submit modal -->
+        <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modalSubmit">
+            <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center md:block md:p-0">
+                <div class="fixed inset-0 transition-opacity">
+                    <div class="absolute inset-0 bg-gray-900 opacity-75">
+                    </div>
+                    <span class="hidden md:inline-block md:align-middle md:h-screen">&#8203;</span>
+                    <div
+                        class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-24 md:my-8 md:align-middle w-[360px] md:max-w-[432px] md:w-full md:h-288px">
+                        <!-- Modal header -->
+                        <div class="flex items-start justify-between rounded-t border-b py-4 px-5">
+                            <h3 class="text-base font-medium"> შენი კითხვა</h3>
+                            <button type="button" class="text-[#6F7680]" onclick="
+                            toggleModalSubmit()"><i class="fas fa-times"></i>
+                                <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-[20px]">
+                            <div class="flex flex-col gap-[24px]">
+                                <div class="flex justify-center">
+                                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="72" height="72" rx="36" fill="#ECF7DC" />
+                                        <rect x="12" y="12" width="48" height="48" rx="24" fill="#45A343" />
+                                        <g clip-path="url(#clip0_5879_694)">
+                                            <path
+                                                d="M33.0004 40.2L28.8004 36L27.4004 37.4L33.0004 43L45.0004 31L43.6004 29.6L33.0004 40.2Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5879_694">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(24 24)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
 
+                                </div>
+                                <div class="flex">
+                                    <p class="text-base leading-relaxed text-gray-500 text-left">კითხვა
+                                        გაიგზავნა. დაელოდე ჩვენს პასუხს</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="flex justify-end rounded-b border-t px-5 py-4">
+                            <button type="button"
+                                class="rounded-[32px] bg-greenButton px-4 py-2 text-center text-base font-medium text-white focus:outline-none">გასაგებია</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- searching with word -->
     <script>
 
         document.querySelector('#search-input').
@@ -892,6 +963,7 @@
             const searchInput = document.querySelector('#search-input');
             const filter = searchInput.value.toLowerCase();
             const listItem = document.querySelectorAll('.acordion-class');
+            const parentAcordion = document.querySelector('.parentAcordion');
 
             listItem.forEach((item) => {
                 let text = item.textContent
@@ -900,11 +972,13 @@
                 }
                 else {
                     item.style.display = 'none';
+                    parentAcordion.style.gap = '0';
                 }
             });
         }
     </script>
 
+    <!-- acordion  -->
     <script>
         const acc = document.getElementsByClassName("accordion");
         let i;
@@ -912,20 +986,43 @@
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
                 let active = this.classList.toggle("active");
-
+                let button = this.children[0];
+                console.log(button);
                 let panel = this.nextElementSibling;
                 let svg = this.children[0].childNodes[3];
-                console.log(svg);
+
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
                     svg.classList.remove("rotate-180");
+                    button.style.borderBottomStyle = "solid";
+
                 } else {
                     panel.style.display = "block";
                     svg.classList.add("rotate-180");
+                    button.style.borderBottomStyle = "none";
                 }
             });
         }
 
+    </script>
+
+    <!-- modal toggle -->
+    <script>
+        let modal1 = document.getElementById('modal');
+        let modalSubmit = document.getElementById('modalSubmit');
+        console.log(modal1);
+        function toggleModal() {
+            modal1.classList.toggle('hidden')
+        }
+        function toggleModalSubmit() {
+            modalSubmit.classList.toggle('hidden');
+            if (modal1.style.display != "none") {
+                modal1.style.display = "none";
+            } else {
+                modal1.style.display = "";
+            }
+
+        }
     </script>
 </body>
 
