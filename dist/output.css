@@ -769,6 +769,18 @@ p,h1,h2,h3,h4,h5,h6,a{
   margin-top: 2.25rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -783,18 +795,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .ml-\[20px\] {
   margin-left: 20px;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-\[60px\] {
-  margin-top: 60px;
 }
 
 .box-border {
@@ -885,6 +885,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   height: 11px;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -965,6 +969,10 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .w-4 {
   width: 1rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-12 {
@@ -1157,6 +1165,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   gap: 0.625rem;
 }
 
+.gap-\[26px\] {
+  gap: 26px;
+}
+
 .gap-\[6px\] {
   gap: 6px;
 }
@@ -1276,6 +1288,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   border-radius: 4px;
 }
 
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
+
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -1334,10 +1350,6 @@ p,h1,h2,h3,h4,h5,h6,a{
   border-bottom-width: 1px;
 }
 
-.border-l {
-  border-left-width: 1px;
-}
-
 .border-solid {
   border-style: solid;
 }
@@ -1377,12 +1389,12 @@ p,h1,h2,h3,h4,h5,h6,a{
   border-color: rgb(224 226 231 / var(--tw-border-opacity));
 }
 
-.border-\[\#1A891766\] {
-  border-color: #1A891766;
-}
-
 .border-\[\#1B21274D\] {
   border-color: #1B21274D;
+}
+
+.border-\[\#1A891766\] {
+  border-color: #1A891766;
 }
 
 .border-opacity-10 {
@@ -1880,6 +1892,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   line-height: 2rem;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
 .leading-\[40px\] {
   line-height: 40px;
 }
@@ -1977,14 +1993,14 @@ p,h1,h2,h3,h4,h5,h6,a{
   color: rgb(111 118 128 / var(--tw-text-opacity));
 }
 
-.text-activeGreen {
-  --tw-text-opacity: 1;
-  color: rgb(47 168 55 / var(--tw-text-opacity));
-}
-
 .text-\[\#1A8917\] {
   --tw-text-opacity: 1;
   color: rgb(26 137 23 / var(--tw-text-opacity));
+}
+
+.text-activeGreen {
+  --tw-text-opacity: 1;
+  color: rgb(47 168 55 / var(--tw-text-opacity));
 }
 
 .accent-\[\#1A8917\] {
