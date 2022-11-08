@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="w-full h-[72px] border-b-2 border-black flex items-center px-[288px]">
+    <header class="w-full h-[72px] flex items-center px-[288px]">
         <div class="flex justify-between w-full items-center">
             <div class="flex items-center gap-4">
                 <img src="/src/img/logo.png" alt="" />
@@ -46,55 +46,147 @@
     </header>
 
     <section class="w-full px-[288px]">
-        <div class="flex p-10 h-[500px]">
-            <div class="flex flex-col items-start gap-4 bg-white rounded-lg w-[292px]">
+        <div class="flex p-10 gap-8">
+            <div class="flex flex-col items-start bg-white rounded-lg w-[292px]">
                 <div class="flex gap-[11.4px]">
                     <img class="w-[17px] h-[17px]" src="/assets/Green_Link_Icon.png" alt="" />
                     <p class="font-bold text-base leading-6 uppercase text-[#1B2127]">
                         მენიუ
                     </p>
                 </div>
-                <div class="rounded-md bg-white box-border w-[292px]">
-                    <h2 class="accordion m-0 p-0">
-                        <button
-                            class="flex justify-between place-items-center p-[15px]  w-full cursor-pointer">
-                            <span class="text-primary text-base pr-[10px]">გირჩის დაშლა</span>
-                            <img src="../assets/arrow.png" alt="arrow" />
-                        </button>
-                    </h2>
-                    <div id="panel"
-                        class="hidden overflow-hidden w-full ">
-                        <ul class="">
-                            <li>გირჩის დაშლა</li>
-                        </ul>
+                <div class="rounded-md bg-white box-border w-[292px] mt-4">
+                    <div>
+                        <h2 class="m-0 p-0">
+                            <button
+                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                <span class="text-primary text-base pr-[10px]">სტატია საქართველოზე</span>
+                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                            </button>
+                        </h2>
+                        <div id="" class="hidden overflow-hidden w-full gap-[2px]">
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="accordion m-0 p-0">
+                            <button
+                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                <span class="text-primary text-base pr-[10px]">გირჩის დაშლა</span>
+                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                            </button>
+                        </h2>
+                        <div id="panel" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]">
+                                    სანდროს ისტორია
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]">
+                                    იაგოს ისტორია
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]">
+                                    საბოს ისტორია
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]">
+                                    ლევანის ისტორია
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="m-0 p-0">
+                            <button
+                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                <span class="text-primary text-base pr-[10px]">თავისუფალი ბაზარი</span>
+                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                            </button>
+                        </h2>
+                        <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="m-0 p-0">
+                            <button
+                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                <span class="text-primary text-base pr-[10px]">სიმართლე ნამახვანჰესზე</span>
+                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                            </button>
+                        </h2>
+                        <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="m-0 p-0">
+                            <button
+                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                <span class="text-primary text-base pr-[10px]">კითხვა შსს-ს</span>
+                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                            </button>
+                        </h2>
+                        <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="m-0 p-0">
+                            <button
+                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                <span class="text-primary text-base pr-[10px]">რატომ არ ჰყავს თავკაცი?</span>
+                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                            </button>
+                        </h2>
+                        <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                            <div
+                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                                    <!--
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
-padding: 12px 12px 12px 16px;
-gap: 8px;
+            </div>
 
-width: 292px;
-height: 48px;
-
-/* Background/White */
-
-background: #FFFFFF;
-/* Gray/Gray 2 (stroke) */
-
-border: 1px solid #E6E6E6;
-border-radius: 6px 6px 0px 0px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-                    -->
+            <div>
+                <div class="flex flex-col gap-5">
+                    <iframe width="940" height="478" src="https://www.youtube.com/embed/GxYzwxO7u8I"
+                    title="Bedford Falls - Dreamer Once" frameborder="0"
+                    allow=""
+                    ></iframe>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2">
+                            <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">პოლიტიკა</p>
+                            <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">სამშბოლო</p>
+                            <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">განცხადება</p>
+                        </div>
+                        <div class="flex flex-row gap-2.5 items-center">
+                            <img class="w-4 h-[11px] " src="/assets/eye.png" alt="">
+                            <p class="text-[#6F7680] text-sm font-medium leading-6 ">172 წაკითხვა</p>
+                            <p class="text-[#6F7680] text-sm font-medium leading-6 ">25 აგვისტო</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
