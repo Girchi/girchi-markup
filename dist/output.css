@@ -1982,6 +1982,11 @@ p,h1,h2,h3,h4,h5,h6,a{
   color: rgb(47 168 55 / var(--tw-text-opacity));
 }
 
+.text-\[\#1A8917\] {
+  --tw-text-opacity: 1;
+  color: rgb(26 137 23 / var(--tw-text-opacity));
+}
+
 .accent-\[\#1A8917\] {
   accent-color: #1A8917;
 }
