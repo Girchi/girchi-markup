@@ -781,6 +781,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   margin-top: 0.25rem;
 }
 
+.mt-\[14px\] {
+  margin-top: 14px;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1009,6 +1013,18 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .max-w-\[432px\] {
   max-width: 432px;
+}
+
+.max-w-\[1343px\] {
+  max-width: 1343px;
+}
+
+.max-w-\[1263px\] {
+  max-width: 1263px;
+}
+
+.max-w-\[407px\] {
+  max-width: 407px;
 }
 
 .max-w-fit {

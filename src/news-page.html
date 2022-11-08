@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
@@ -45,392 +46,480 @@
         </div>
     </header>
 
-    <section class="w-full px-[288px]">
-        <div class="flex p-10 gap-8">
-            <!--
-                start left side div
-            -->
-            <div class="flex flex-col items-start bg-white rounded-lg w-[292px]">
-                <div class="flex gap-[11.4px]">
-                    <img class="w-[17px] h-[17px]" src="/assets/Green_Link_Icon.png" alt="" />
-                    <p class="font-bold text-base leading-6 uppercase text-[#1B2127]">
-                        მენიუ
-                    </p>
-                </div>
-                <div class="rounded-md bg-white box-border w-[292px] mt-4">
-                    <div>
-                        <h2 class="m-0 p-0">
-                            <button
-                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
-                                <span class="text-primary text-base pr-[10px]">სტატია საქართველოზე</span>
-                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
-                            </button>
-                        </h2>
-                        <div id="" class="hidden overflow-hidden w-full gap-[2px]">
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="accordion m-0 p-0">
-                            <button
-                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
-                                <span class="text-primary text-base pr-[10px]">გირჩის დაშლა</span>
-                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
-                            </button>
-                        </h2>
-                        <div id="panel" class="hidden overflow-hidden w-full p-2 gap-[2px]">
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]">
-                                    სანდროს ისტორია
-                                </p>
-                            </div>
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]">
-                                    იაგოს ისტორია
-                                </p>
-                            </div>
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]">
-                                    საბოს ისტორია
-                                </p>
-                            </div>
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]">
-                                    ლევანის ისტორია
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="m-0 p-0">
-                            <button
-                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
-                                <span class="text-primary text-base pr-[10px]">თავისუფალი ბაზარი</span>
-                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
-                            </button>
-                        </h2>
-                        <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="m-0 p-0">
-                            <button
-                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
-                                <span class="text-primary text-base pr-[10px]">სიმართლე ნამახვანჰესზე</span>
-                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
-                            </button>
-                        </h2>
-                        <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="m-0 p-0">
-                            <button
-                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
-                                <span class="text-primary text-base pr-[10px]">კითხვა შსს-ს</span>
-                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
-                            </button>
-                        </h2>
-                        <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="m-0 p-0">
-                            <button
-                                class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
-                                <span class="text-primary text-base pr-[10px]">რატომ არ ჰყავს თავკაცი?</span>
-                                <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
-                            </button>
-                        </h2>
-                        <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
-                            <div
-                                class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--
-                end left side div
-            -->
-
-            <!--
-                start right side div
-            -->
-            <div>
+    <section class="w-full">
+        <div class="mx-auto max-w-[1343px]">
+            <div class="flex p-10 gap-8">
                 <!--
-                start iframe video
+                    start left side div
+                -->
+                <div class="flex flex-col items-start bg-white rounded-lg w-[292px]">
+                    <div class="flex gap-[11.4px]">
+                        <img class="w-[17px] h-[17px]" src="/assets/Green_Link_Icon.png" alt="" />
+                        <p class="font-bold text-base leading-6 uppercase text-[#1B2127]">
+                            მენიუ
+                        </p>
+                    </div>
+                    <div class="rounded-md bg-white box-border w-[292px] mt-4">
+                        <div>
+                            <h2 class="m-0 p-0">
+                                <button
+                                    class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                    <span class="text-primary text-base pr-[10px]">სტატია საქართველოზე</span>
+                                    <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                                </button>
+                            </h2>
+                            <div id="" class="hidden overflow-hidden w-full gap-[2px]">
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="accordion m-0 p-0">
+                                <button
+                                    class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                    <span class="text-primary text-base pr-[10px]">გირჩის დაშლა</span>
+                                    <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                                </button>
+                            </h2>
+                            <div id="panel" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]">
+                                        სანდროს ისტორია
+                                    </p>
+                                </div>
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]">
+                                        იაგოს ისტორია
+                                    </p>
+                                </div>
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]">
+                                        საბოს ისტორია
+                                    </p>
+                                </div>
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]">
+                                        ლევანის ისტორია
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m-0 p-0">
+                                <button
+                                    class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                    <span class="text-primary text-base pr-[10px]">თავისუფალი ბაზარი</span>
+                                    <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                                </button>
+                            </h2>
+                            <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m-0 p-0">
+                                <button
+                                    class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                    <span class="text-primary text-base pr-[10px]">სიმართლე ნამახვანჰესზე</span>
+                                    <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                                </button>
+                            </h2>
+                            <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m-0 p-0">
+                                <button
+                                    class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                    <span class="text-primary text-base pr-[10px]">კითხვა შსს-ს</span>
+                                    <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                                </button>
+                            </h2>
+                            <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="m-0 p-0">
+                                <button
+                                    class="box-border flex flex-row justify-between items-center py-[12px] px-[16px] gap-2 rounded-md w-full">
+                                    <span class="text-primary text-base pr-[10px]">რატომ არ ჰყავს თავკაცი?</span>
+                                    <img class="w-2.5 h-1.5" src="../assets/arrow.png" alt="arrow" />
+                                </button>
+                            </h2>
+                            <div id="" class="hidden overflow-hidden w-full p-2 gap-[2px]">
+                                <div
+                                    class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
+                                    <p class="font-medium text-sm leading-6 text-[#6F7680]"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                    end left side div
+                -->
+    
+                <!--
+                    start right side div
                 -->
                 <div>
-                    <div class="flex flex-col gap-5">
-                        <iframe width="940" height="478" src="https://www.youtube.com/embed/GxYzwxO7u8I"
-                            title="Bedford Falls - Dreamer Once" frameborder="0" allow=""></iframe>
+                    <!--
+                    start iframe video
+                    -->
+                    <div>
+                        <div class="flex flex-col gap-5">
+                            <iframe width="940" height="478" src="https://www.youtube.com/embed/GxYzwxO7u8I"
+                                title="Bedford Falls - Dreamer Once" frameborder="0" allow=""></iframe>
+                            <div class="flex justify-between items-center">
+                                <div class="flex gap-2">
+                                    <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">პოლიტიკა</p>
+                                    <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">სამშბოლო</p>
+                                    <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">განცხადება</p>
+                                </div>
+                                <div class="flex flex-row gap-2.5 items-center">
+                                    <img class="w-4 h-[11px] " src="/assets/eye.png" alt="">
+                                    <p class="text-[#6F7680] text-sm font-medium leading-6 ">172 წაკითხვა</p>
+                                    <img src="/assets/Dot.png" alt="">
+                                    <p class="text-[#6F7680] text-sm font-medium leading-6 ">25 აგვისტო</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    end iframe video
+                    -->
+    
+                    <!--
+                    start text under the video
+                    -->
+                    <div class="w-full mt-9 gap-4 flex flex-col">
+                        <h1 class="font-bold text-2xl leading-8 uppercase text-[#292D33] ">საქართველოს დაბადება</h1>
+                        <p class="font-normal text-base leading-6 text-[#292D33] ">გამოუდგა დამენანა შესული ეძინებოდა
+                            ყრილობა შეუტყობინებიათ, ჭურჭელის მყავს, იმალებოდა გაგვიყვეს.
+                            დამეღწია ჭრიალი ვაჟკაცის მართლმადიდებლური შეკედლებულ ჩამოეცალა ღმერთსაო კაციაო დამცირებასა.
+                            გაასუსონ გაქანდა სუნს განი, ცურვაზე, უცოლოდ ჭრიალი დაიხვიხვინებდა სათამაშოს მამასთან გარანტიებს
+                            ჩავედი შეთხუპნილი შერეული.<span><br><br></span>
+    
+                            ხელიები დესპანები სამოქალაქო გასცლოდნენ დარღვევას დაბუდებული. სევდიანს აბეზრობას მოიტეხა
+                            პრესსტუდია გონიერის პაეზდკა. შეიკუმშა დაესადგურებინა ქსოვილისა, დახედა, პრესსტუდია სერიოზულადაა
+                            პაეზდკა დარღვევას ჩაფლული დაღუნა ამოიჩარა შებღალავს. სილა შეიკუმშა ბრეტონი, გუნებაში ზევიდანაც
+                            ანიშნებს მფლობელს ამხანაგს ცერცვის. განავლის<span><br></span>
+                            შებღალავს ხელიები მფლობელს კვალისთვისაც მიეყრდნენ ანიშნებს, ესკიუ ზიდვას პროდიუსერების. ამოიჩარა
+                            პროდიუსერების ზევიდანაც, ფრანგულიც ბორისი პრესსტუდია იტანჯებოდა. სიმბოლოა გონიერის ცხავრზე
+                            შალვას, ცერცვის მდევარი დუმილია ხუთასფრანკიანი პროდიუსერების კატებიც, შეიკუმშა
+                            ბრძანებით.<span><br><br></span>
+    
+                            დასტაცა ბუზი ხმამაღლა პროტექტორის სარკის ძალაუფლებისმოყვარული, მეტისმეტად ტერმინი მაყრიონით უენი
+                            ვარდში დამხატეთ დაინაწილეს დიასახლის. შალითაში მოგიტანდე დაინაწილეს აპატიებდა მეგობრის, პენსი
+                            ტერმინი. გადახვეწის აღიგზნებოდა ბრძანებასა ბერგერს თავშესაქცევი შენთანა დასტაცა, უენი
+                            ძალაუფლებისმოყვარული მაყრიონით. დიასახლის ტყვის ყურძნით ძალაუფლებისმოყვარული მოგიტანდე, მოგართვა
+                            დააბრალე ვნებებზე დამიმორჩილებენ. კამპანია თანაშემოქმედების დაინაწილეს ბერგერს, დააბრალე,
+                            აღიგზნებოდა რაინდივით აინთო.
+                        </p>
+                    </div>
+                    <!--
+                        end text under the video
+                    -->
+    
+                    <!--
+                        start first quatation marks
+                    -->
+                    <div class="w-full flex flex-col p-6 gap-6 mt-12 border-l-4 border-[#1B21274D]">
+                        <p class="font-normal text-base leading-6 text-[#1B2127] ">ამ კაცს არ აქვს ოქროს ბურთი ან ბუცი. 23
+                            წლისაა საკლუბო დონეზე სულ ერთხელ გავიდა ლიგის
+                            ფინალში, რომელიც წააგო. მთელი თავისი ცხოვრებაა ლიგა ერთის არიფებს ეთამაშება და ისე იქცევა
+                            თითქოს მესიმ რონალდუმ და მთელმა სამყარობ მის წინაშე უნდა დაიჩოქოს</p>
                         <div class="flex justify-between items-center">
+                            <p class="font-normal text-base leading-6 text-[#1B2127] ">ავტორი: მურმან ლებანიძე</p>
+                            <img src="/assets/quotation-marks.png" alt="">
+                        </div>
+                    </div>
+                    <!--
+                        end first quatation marks
+                    -->
+    
+                    <!--
+                        start div with 3 image
+                    -->
+                    <div class="flex flex-col gap-3 p-3 mt-[60px]">
+                        <div class="flex gap-2">
+                            <img src="/assets/detailed-news-page-1.png" alt="">
+                            <img src="/assets/detailed-news-page-2.png" alt="">
+                            <img src="/assets/detailed-news-page-3.png" alt="">
+                        </div>
+                        <p class="font-normal text-sm leading-6 text-[#6F7680] ">საავტორო უფლება ეკუთვის: მირზა გელოვანი,
+                            2020</p>
+                    </div>
+                    <!--
+                        end div with 3 image
+                    -->
+    
+                    <!--
+                    start text under the 3 image
+                    -->
+                    <div class="w-full mt-12 gap-4 flex flex-col">
+                        <h1 class="font-bold text-xl leading-6 uppercase text-[#292D33] ">საქართველოს დაბადება</h1>
+                        <p class="font-normal text-base leading-6 text-[#292D33] ">გამოუდგა დამენანა შესული ეძინებოდა
+                            ყრილობა შეუტყობინებიათ, ჭურჭელის მყავს, იმალებოდა გაგვიყვეს.
+                            დამეღწია ჭრიალი ვაჟკაცის მართლმადიდებლური შეკედლებულ ჩამოეცალა ღმერთსაო კაციაო დამცირებასა.
+                            გაასუსონ გაქანდა სუნს განი, ცურვაზე, უცოლოდ ჭრიალი დაიხვიხვინებდა სათამაშოს მამასთან გარანტიებს
+                            ჩავედი შეთხუპნილი შერეული.<span><br><br></span>
+    
+                            ხელიები დესპანები სამოქალაქო გასცლოდნენ დარღვევას დაბუდებული. სევდიანს აბეზრობას მოიტეხა
+                            პრესსტუდია გონიერის პაეზდკა. შეიკუმშა დაესადგურებინა ქსოვილისა, დახედა, პრესსტუდია სერიოზულადაა
+                            პაეზდკა დარღვევას ჩაფლული დაღუნა ამოიჩარა შებღალავს. სილა შეიკუმშა ბრეტონი, გუნებაში ზევიდანაც
+                            ანიშნებს მფლობელს ამხანაგს ცერცვის. განავლის<span><br></span>
+                            შებღალავს ხელიები მფლობელს კვალისთვისაც მიეყრდნენ ანიშნებს, ესკიუ ზიდვას პროდიუსერების. ამოიჩარა
+                            პროდიუსერების ზევიდანაც, ფრანგულიც ბორისი პრესსტუდია იტანჯებოდა. სიმბოლოა გონიერის ცხავრზე
+                            შალვას, ცერცვის მდევარი დუმილია ხუთასფრანკიანი პროდიუსერების კატებიც, შეიკუმშა
+                            ბრძანებით.<span><br><br></span>
+    
+                            დასტაცა ბუზი ხმამაღლა პროტექტორის სარკის ძალაუფლებისმოყვარული, მეტისმეტად ტერმინი მაყრიონით უენი
+                            ვარდში დამხატეთ დაინაწილეს დიასახლის. შალითაში მოგიტანდე დაინაწილეს აპატიებდა მეგობრის, პენსი
+                            ტერმინი. გადახვეწის აღიგზნებოდა ბრძანებასა ბერგერს თავშესაქცევი შენთანა დასტაცა, უენი
+                            ძალაუფლებისმოყვარული მაყრიონით. დიასახლის ტყვის ყურძნით ძალაუფლებისმოყვარული მოგიტანდე, მოგართვა
+                            დააბრალე ვნებებზე დამიმორჩილებენ. კამპანია თანაშემოქმედების დაინაწილეს ბერგერს, დააბრალე,
+                            აღიგზნებოდა რაინდივით აინთო.
+                        </p>
+                    </div>
+                    <!--
+                        end text under the 3 image
+                    -->
+    
+                    <!--
+                        start div with 2 image
+                    -->
+                    <div class="flex flex-col gap-3 p-3 mt-12">
+                        <div class="flex gap-2">
+                            <img src="/assets/detailed-news-page-4.png" alt="">
+                            <img src="/assets/detailed-news-page-5.png" alt="">
+                        </div>
+                        <p class="font-normal text-sm leading-6 text-[#6F7680] ">საავტორო უფლება ეკუთვის: მირზა გელოვანი,
+                            2020</p>
+                    </div>
+                    <!--
+                        end div with 2 image
+                    -->
+    
+                    <!--
+                        start second quatation marks
+                    -->
+                    <div class="w-full flex flex-col p-6 gap-6 mt-12 border-l-4 border-[#1B21274D]">
+                        <p class="font-normal text-base leading-6 text-[#1B2127] ">ამ კაცს არ აქვს ოქროს ბურთი ან ბუცი. 23
+                            წლისაა საკლუბო დონეზე სულ ერთხელ გავიდა ლიგის
+                            ფინალში, რომელიც წააგო. მთელი თავისი ცხოვრებაა ლიგა ერთის არიფებს ეთამაშება და ისე იქცევა
+                            თითქოს მესიმ რონალდუმ და მთელმა სამყარობ მის წინაშე უნდა დაიჩოქოს</p>
+                        <div class="flex justify-between items-center">
+                            <p class="font-normal text-base leading-6 text-[#1B2127] ">ავტორი: მურმან ლებანიძე</p>
+                            <img src="/assets/quotation-marks.png" alt="">
+                        </div>
+                    </div>
+                    <!--
+                        end second quatation marks
+                    -->
+    
+                    <!--
+                        start last text
+                    -->
+                    <p class="mt-12 font-normal text-base leading-6 text-[#292D33] ">ხელიები დესპანები სამოქალაქო გასცლოდნენ
+                        დარღვევას დაბუდებული. სევდიანს აბეზრობას მოიტეხა პრესსტუდია
+                        გონიერის პაეზდკა. შეიკუმშა დაესადგურებინა ქსოვილისა, დახედა, პრესსტუდია სერიოზულადაა პაეზდკა
+                        დარღვევას ჩაფლული დაღუნა ამოიჩარა შებღალავს. სილა შეიკუმშა ბრეტონი, გუნებაში ზევიდანაც ანიშნებს
+                        მფლობელს ამხანაგს ცერცვის. განავლის<span><br></span>
+                        შებღალავს ხელიები მფლობელს კვალისთვისაც მიეყრდნენ ანიშნებს, ესკიუ ზიდვას პროდიუსერების. ამოიჩარა
+                        პროდიუსერების ზევიდანაც, ფრანგულიც ბორისი პრესსტუდია იტანჯებოდა. სიმბოლოა გონიერის ცხავრზე შალვას,
+                        ცერცვის მდევარი დუმილია ხუთასფრანკიანი პროდიუსერების კატებიც, შეიკუმშა
+                        ბრძანებით.<span><br><br></span>
+    
+                        დასტაცა ბუზი ხმამაღლა პროტექტორის სარკის ძალაუფლებისმოყვარული, მეტისმეტად ტერმინი მაყრიონით უენი
+                        ვარდში დამხატეთ დაინაწილეს დიასახლის. შალითაში მოგიტანდე დაინაწილეს აპატიებდა მეგობრის, პენსი
+                        ტერმინი. გადახვეწის აღიგზნებოდა ბრძანებასა ბერგერს თავშესაქცევი შენთანა დასტაცა, უენი
+                        ძალაუფლებისმოყვარული მაყრიონით. დიასახლის ტყვის ყურძნით ძალაუფლებისმოყვარული მოგიტანდე, მოგართვა
+                        დააბრალე ვნებებზე დამიმორჩილებენ. კამპანია თანაშემოქმედების დაინაწილეს ბერგერს, დააბრალე,
+                        აღიგზნებოდა რაინდივით აინთო.
+                    </p>
+                    <!--
+                        end last text
+                    -->
+                    <div class="flex gap-2 mt-12">
+                        <div class="flex gap-3 px-3 py-1">
+                            <p class="font-medium text-sm leading-6 text-[#1A8917] ">#</p>
+                            <p class="font-medium text-sm leading-5 text-[#1B2127]">პოლიტიკა</p>
+                        </div>
+                        <div class="flex gap-3 px-3 py-1">
+                            <p class="font-medium text-sm leading-6 text-[#1A8917] ">#</p>
+                            <p class="font-medium text-sm leading-5 text-[#1B2127]">სამშობლო</p>
+                        </div>
+                        <div class="flex gap-3 px-3 py-1">
+                            <p class="font-medium text-sm leading-6 text-[#1A8917] ">#</p>
+                            <p class="font-medium text-sm leading-5 text-[#1B2127]">ლამაზო</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col max-w-[1263px] gap-[26px] mx-auto overflow-x-hidden mySwiperr">
+                <div class="flex items-center justify-between w-full">
+                    <h2 class="font-bold text-2xl leading-8 text-[#1B2127] ">მსგავსი სტატიები</h2>
+                    <div class="flex justify-center items-center gap-4">
+                        <div class="w-8 h-8 rounded-[50%] border-[1px] border-black flex justify-center items-center  swiper-button-prevv ">
+                            <img src="/assets/BtnLeft.png" alt="">
+                        </div>
+                        <div class="w-8 h-8 rounded-[50%] border-[1px] border-black flex justify-center items-center  swiper-button-nextt">
+                            <img src="/assets/BtnRight.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex swiper-wrapper">
+                    <div class="flex flex-col swiper-slide  max-w-[407px]">
+                        <img src="/assets/detailed-news-page-6.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
                             <div class="flex gap-2">
-                                <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">პოლიტიკა</p>
-                                <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">სამშბოლო</p>
-                                <p class="text-sm leading-5 text-[#1B2127] font-medium px-2 py-1 ">განცხადება</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
                             </div>
-                            <div class="flex flex-row gap-2.5 items-center">
-                                <img class="w-4 h-[11px] " src="/assets/eye.png" alt="">
-                                <p class="text-[#6F7680] text-sm font-medium leading-6 ">172 წაკითხვა</p>
-                                <img src="/assets/Dot.png" alt="">
-                                <p class="text-[#6F7680] text-sm font-medium leading-6 ">25 აგვისტო</p>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <div class="w-full flex justify-center items-center mt-[14px]">
+                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="flex flex-col swiper-slide  max-w-[407px]">
+                        <img src="/assets/detailed-news-page-7.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
+                            <div class="flex gap-2">
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                            </div>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <div class="w-full flex justify-center items-center mt-[14px]">
+                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--
-                end iframe video
-                -->
-
-                <!--
-                start text under the video
-                -->
-                <div class="w-full mt-9 gap-4 flex flex-col">
-                    <h1 class="font-bold text-2xl leading-8 uppercase text-[#292D33] ">საქართველოს დაბადება</h1>
-                    <p class="font-normal text-base leading-6 text-[#292D33] ">გამოუდგა დამენანა შესული ეძინებოდა
-                        ყრილობა შეუტყობინებიათ, ჭურჭელის მყავს, იმალებოდა გაგვიყვეს.
-                        დამეღწია ჭრიალი ვაჟკაცის მართლმადიდებლური შეკედლებულ ჩამოეცალა ღმერთსაო კაციაო დამცირებასა.
-                        გაასუსონ გაქანდა სუნს განი, ცურვაზე, უცოლოდ ჭრიალი დაიხვიხვინებდა სათამაშოს მამასთან გარანტიებს
-                        ჩავედი შეთხუპნილი შერეული.<span><br><br></span>
-
-                        ხელიები დესპანები სამოქალაქო გასცლოდნენ დარღვევას დაბუდებული. სევდიანს აბეზრობას მოიტეხა
-                        პრესსტუდია გონიერის პაეზდკა. შეიკუმშა დაესადგურებინა ქსოვილისა, დახედა, პრესსტუდია სერიოზულადაა
-                        პაეზდკა დარღვევას ჩაფლული დაღუნა ამოიჩარა შებღალავს. სილა შეიკუმშა ბრეტონი, გუნებაში ზევიდანაც
-                        ანიშნებს მფლობელს ამხანაგს ცერცვის. განავლის<span><br></span>
-                        შებღალავს ხელიები მფლობელს კვალისთვისაც მიეყრდნენ ანიშნებს, ესკიუ ზიდვას პროდიუსერების. ამოიჩარა
-                        პროდიუსერების ზევიდანაც, ფრანგულიც ბორისი პრესსტუდია იტანჯებოდა. სიმბოლოა გონიერის ცხავრზე
-                        შალვას, ცერცვის მდევარი დუმილია ხუთასფრანკიანი პროდიუსერების კატებიც, შეიკუმშა
-                        ბრძანებით.<span><br><br></span>
-
-                        დასტაცა ბუზი ხმამაღლა პროტექტორის სარკის ძალაუფლებისმოყვარული, მეტისმეტად ტერმინი მაყრიონით უენი
-                        ვარდში დამხატეთ დაინაწილეს დიასახლის. შალითაში მოგიტანდე დაინაწილეს აპატიებდა მეგობრის, პენსი
-                        ტერმინი. გადახვეწის აღიგზნებოდა ბრძანებასა ბერგერს თავშესაქცევი შენთანა დასტაცა, უენი
-                        ძალაუფლებისმოყვარული მაყრიონით. დიასახლის ტყვის ყურძნით ძალაუფლებისმოყვარული მოგიტანდე, მოგართვა
-                        დააბრალე ვნებებზე დამიმორჩილებენ. კამპანია თანაშემოქმედების დაინაწილეს ბერგერს, დააბრალე,
-                        აღიგზნებოდა რაინდივით აინთო.
-                    </p>
-                </div>
-                <!--
-                    end text under the video
-                -->
-
-                <!--
-                    start first quatation marks
-                -->
-                <div class="w-full flex flex-col p-6 gap-6 mt-12 border-l-4 border-[#1B21274D]">
-                    <p class="font-normal text-base leading-6 text-[#1B2127] ">ამ კაცს არ აქვს ოქროს ბურთი ან ბუცი. 23
-                        წლისაა საკლუბო დონეზე სულ ერთხელ გავიდა ლიგის
-                        ფინალში, რომელიც წააგო. მთელი თავისი ცხოვრებაა ლიგა ერთის არიფებს ეთამაშება და ისე იქცევა
-                        თითქოს მესიმ რონალდუმ და მთელმა სამყარობ მის წინაშე უნდა დაიჩოქოს</p>
-                    <div class="flex justify-between items-center">
-                        <p class="font-normal text-base leading-6 text-[#1B2127] ">ავტორი: მურმან ლებანიძე</p>
-                        <img src="/assets/quotation-marks.png" alt="">
-                    </div>
-                </div>
-                <!--
-                    end first quatation marks
-                -->
-
-                <!--
-                    start div with 3 image
-                -->
-                <div class="flex flex-col gap-3 p-3 mt-[60px]">
-                    <div class="flex gap-2">
-                        <img src="/assets/detailed-news-page-1.png" alt="">
-                        <img src="/assets/detailed-news-page-2.png" alt="">
-                        <img src="/assets/detailed-news-page-3.png" alt="">
-                    </div>
-                    <p class="font-normal text-sm leading-6 text-[#6F7680] ">საავტორო უფლება ეკუთვის: მირზა გელოვანი,
-                        2020</p>
-                </div>
-                <!--
-                    end div with 3 image
-                -->
-
-                <!--
-                start text under the 3 image
-                -->
-                <div class="w-full mt-12 gap-4 flex flex-col">
-                    <h1 class="font-bold text-xl leading-6 uppercase text-[#292D33] ">საქართველოს დაბადება</h1>
-                    <p class="font-normal text-base leading-6 text-[#292D33] ">გამოუდგა დამენანა შესული ეძინებოდა
-                        ყრილობა შეუტყობინებიათ, ჭურჭელის მყავს, იმალებოდა გაგვიყვეს.
-                        დამეღწია ჭრიალი ვაჟკაცის მართლმადიდებლური შეკედლებულ ჩამოეცალა ღმერთსაო კაციაო დამცირებასა.
-                        გაასუსონ გაქანდა სუნს განი, ცურვაზე, უცოლოდ ჭრიალი დაიხვიხვინებდა სათამაშოს მამასთან გარანტიებს
-                        ჩავედი შეთხუპნილი შერეული.<span><br><br></span>
-
-                        ხელიები დესპანები სამოქალაქო გასცლოდნენ დარღვევას დაბუდებული. სევდიანს აბეზრობას მოიტეხა
-                        პრესსტუდია გონიერის პაეზდკა. შეიკუმშა დაესადგურებინა ქსოვილისა, დახედა, პრესსტუდია სერიოზულადაა
-                        პაეზდკა დარღვევას ჩაფლული დაღუნა ამოიჩარა შებღალავს. სილა შეიკუმშა ბრეტონი, გუნებაში ზევიდანაც
-                        ანიშნებს მფლობელს ამხანაგს ცერცვის. განავლის<span><br></span>
-                        შებღალავს ხელიები მფლობელს კვალისთვისაც მიეყრდნენ ანიშნებს, ესკიუ ზიდვას პროდიუსერების. ამოიჩარა
-                        პროდიუსერების ზევიდანაც, ფრანგულიც ბორისი პრესსტუდია იტანჯებოდა. სიმბოლოა გონიერის ცხავრზე
-                        შალვას, ცერცვის მდევარი დუმილია ხუთასფრანკიანი პროდიუსერების კატებიც, შეიკუმშა
-                        ბრძანებით.<span><br><br></span>
-
-                        დასტაცა ბუზი ხმამაღლა პროტექტორის სარკის ძალაუფლებისმოყვარული, მეტისმეტად ტერმინი მაყრიონით უენი
-                        ვარდში დამხატეთ დაინაწილეს დიასახლის. შალითაში მოგიტანდე დაინაწილეს აპატიებდა მეგობრის, პენსი
-                        ტერმინი. გადახვეწის აღიგზნებოდა ბრძანებასა ბერგერს თავშესაქცევი შენთანა დასტაცა, უენი
-                        ძალაუფლებისმოყვარული მაყრიონით. დიასახლის ტყვის ყურძნით ძალაუფლებისმოყვარული მოგიტანდე, მოგართვა
-                        დააბრალე ვნებებზე დამიმორჩილებენ. კამპანია თანაშემოქმედების დაინაწილეს ბერგერს, დააბრალე,
-                        აღიგზნებოდა რაინდივით აინთო.
-                    </p>
-                </div>
-                <!--
-                    end text under the 3 image
-                -->
-
-                <!--
-                    start div with 2 image
-                -->
-                <div class="flex flex-col gap-3 p-3 mt-12">
-                    <div class="flex gap-2">
-                        <img src="/assets/detailed-news-page-4.png" alt="">
-                        <img src="/assets/detailed-news-page-5.png" alt="">
-                    </div>
-                    <p class="font-normal text-sm leading-6 text-[#6F7680] ">საავტორო უფლება ეკუთვის: მირზა გელოვანი,
-                        2020</p>
-                </div>
-                <!--
-                    end div with 2 image
-                -->
-
-                <!--
-                    start second quatation marks
-                -->
-                <div class="w-full flex flex-col p-6 gap-6 mt-12 border-l-4 border-[#1B21274D]">
-                    <p class="font-normal text-base leading-6 text-[#1B2127] ">ამ კაცს არ აქვს ოქროს ბურთი ან ბუცი. 23
-                        წლისაა საკლუბო დონეზე სულ ერთხელ გავიდა ლიგის
-                        ფინალში, რომელიც წააგო. მთელი თავისი ცხოვრებაა ლიგა ერთის არიფებს ეთამაშება და ისე იქცევა
-                        თითქოს მესიმ რონალდუმ და მთელმა სამყარობ მის წინაშე უნდა დაიჩოქოს</p>
-                    <div class="flex justify-between items-center">
-                        <p class="font-normal text-base leading-6 text-[#1B2127] ">ავტორი: მურმან ლებანიძე</p>
-                        <img src="/assets/quotation-marks.png" alt="">
-                    </div>
-                </div>
-                <!--
-                    end second quatation marks
-                -->
-
-                <!--
-                    start last text
-                -->
-                <p class="mt-12 font-normal text-base leading-6 text-[#292D33] ">ხელიები დესპანები სამოქალაქო გასცლოდნენ დარღვევას დაბუდებული. სევდიანს აბეზრობას მოიტეხა პრესსტუდია
-                    გონიერის პაეზდკა. შეიკუმშა დაესადგურებინა ქსოვილისა, დახედა, პრესსტუდია სერიოზულადაა პაეზდკა
-                    დარღვევას ჩაფლული დაღუნა ამოიჩარა შებღალავს. სილა შეიკუმშა ბრეტონი, გუნებაში ზევიდანაც ანიშნებს
-                    მფლობელს ამხანაგს ცერცვის. განავლის<span><br></span>
-                    შებღალავს ხელიები მფლობელს კვალისთვისაც მიეყრდნენ ანიშნებს, ესკიუ ზიდვას პროდიუსერების. ამოიჩარა
-                    პროდიუსერების ზევიდანაც, ფრანგულიც ბორისი პრესსტუდია იტანჯებოდა. სიმბოლოა გონიერის ცხავრზე შალვას,
-                    ცერცვის მდევარი დუმილია ხუთასფრანკიანი პროდიუსერების კატებიც, შეიკუმშა ბრძანებით.<span><br><br></span>
-
-                    დასტაცა ბუზი ხმამაღლა პროტექტორის სარკის ძალაუფლებისმოყვარული, მეტისმეტად ტერმინი მაყრიონით უენი
-                    ვარდში დამხატეთ დაინაწილეს დიასახლის. შალითაში მოგიტანდე დაინაწილეს აპატიებდა მეგობრის, პენსი
-                    ტერმინი. გადახვეწის აღიგზნებოდა ბრძანებასა ბერგერს თავშესაქცევი შენთანა დასტაცა, უენი
-                    ძალაუფლებისმოყვარული მაყრიონით. დიასახლის ტყვის ყურძნით ძალაუფლებისმოყვარული მოგიტანდე, მოგართვა
-                    დააბრალე ვნებებზე დამიმორჩილებენ. კამპანია თანაშემოქმედების დაინაწილეს ბერგერს, დააბრალე,
-                    აღიგზნებოდა რაინდივით აინთო.
-                </p>
-                <!--
-                    end last text
-                -->
-                <div class="flex gap-2 mt-12">
-                    <div class="flex gap-3 px-3 py-1">
-                        <p class="font-medium text-sm leading-6 text-[#1A8917] ">#</p>
-                        <p class="font-medium text-sm leading-5 text-[#1B2127]">პოლიტიკა</p>
-                    </div>
-                    <div class="flex gap-3 px-3 py-1">
-                        <p class="font-medium text-sm leading-6 text-[#1A8917] ">#</p>
-                        <p class="font-medium text-sm leading-5 text-[#1B2127]">სამშობლო</p>
-                    </div>
-                    <div class="flex gap-3 px-3 py-1">
-                        <p class="font-medium text-sm leading-6 text-[#1A8917] ">#</p>
-                        <p class="font-medium text-sm leading-5 text-[#1B2127]">ლამაზო</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col p-10 gap-[26px] w-full">
-            <div class="flex items-center justify-between w-full">
-                <h2 class="font-bold text-2xl leading-8 text-[#1B2127] ">მსგავსი სტატიები</h2>
-                <div class="flex justify-center items-center gap-4">
-                    <div class="w-8 h-8 rounded-[50%] border-[1px] border-black flex justify-center items-center">
-                        <img src="/assets/BtnLeft.png" alt="">
-                    </div>
-                    <div class="w-8 h-8 rounded-[50%] border-[1px] border-black flex justify-center items-center">
-                        <img src="/assets/BtnRight.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="flex gap-6">
-                <div class="flex flex-col">
-                    <img src="/assets/detailed-news-page-6.png" alt="">
-                    <div class="flex flex-col w-full p-5 gap-3">
-                        <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
-                        <div class="flex gap-2">
-                            <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
-                            <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                    <div class="flex flex-col swiper-slide  max-w-[407px]">
+                        <img src="/assets/detailed-news-page-8.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
+                            <div class="flex gap-2">
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                            </div>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <div class="w-full flex justify-center items-center mt-[14px]">
+                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                            </div>
                         </div>
-                        <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...</p>
                     </div>
-                    <div class="w-full flex justify-center items-center">
-                        <p class="font-medium text-base leading-6 py-2">სრულად ნახვა</p>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <img src="/assets/detailed-news-page-7.png" alt="">
-                    <div class="flex flex-col w-full p-5 gap-3">
-                        <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
-                        <div class="flex gap-2">
-                            <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
-                            <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                    <div class="flex flex-col swiper-slide  max-w-[407px]">
+                        <img src="/assets/detailed-news-page-8.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
+                            <div class="flex gap-2">
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                            </div>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <div class="w-full flex justify-center items-center mt-[14px]">
+                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                            </div>
                         </div>
-                        <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...</p>
                     </div>
-                    <div class="w-full flex justify-center items-center">
-                        <p class="font-medium text-base leading-6 py-2">სრულად ნახვა</p>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <img src="/assets/detailed-news-page-8.png" alt="">
-                    <div class="flex flex-col w-full p-5 gap-3">
-                        <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
-                        <div class="flex gap-2">
-                            <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
-                            <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                    <div class="flex flex-col swiper-slide  max-w-[407px]">
+                        <img src="/assets/detailed-news-page-8.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
+                            <div class="flex gap-2">
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                            </div>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <div class="w-full flex justify-center items-center mt-[14px]">
+                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                            </div>
                         </div>
-                        <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...</p>
                     </div>
-                    <div class="w-full flex justify-center items-center">
-                        <p class="font-medium text-base leading-6 py-2">სრულად ნახვა</p>
+                    <div class="flex flex-col swiper-slide  max-w-[407px]">
+                        <img src="/assets/detailed-news-page-8.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
+                            <div class="flex gap-2">
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                            </div>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <div class="w-full flex justify-center items-center mt-[14px]">
+                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="flex flex-col swiper-slide max-w-[407px]">
+                        <img src="/assets/detailed-news-page-8.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
+                            <div class="flex gap-2">
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                            </div>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <div class="w-full flex justify-center items-center mt-[14px]">
+                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                            </div>
+                        </div>
+                    </div>
+    
                 </div>
-
             </div>
         </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="/js/news-page.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiperr", {
+          slidesPerView: 3,
+          spaceBetween: 27,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: false,
+          navigation: {
+            nextEl: ".swiper-button-nextt",
+            prevEl: ".swiper-button-prevv",
+          },
+        });
+      </script>
 </body>
 
 </html>
