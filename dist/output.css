@@ -765,6 +765,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   margin-top: 1rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -779,6 +783,18 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .ml-\[20px\] {
   margin-left: 20px;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .box-border {
@@ -853,10 +869,6 @@ p,h1,h2,h3,h4,h5,h6,a{
   height: 72px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-\[17px\] {
   height: 17px;
 }
@@ -867,6 +879,10 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-\[11px\] {
+  height: 11px;
 }
 
 .h-full {
@@ -887,10 +903,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .h-\[380px\] {
   height: 380px;
-}
-
-.h-\[11px\] {
-  height: 11px;
 }
 
 .min-h-screen {
@@ -951,6 +963,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   width: 0.5rem;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -973,10 +989,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .w-\[490px\] {
   width: 490px;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .min-w-full {
@@ -1141,16 +1153,16 @@ p,h1,h2,h3,h4,h5,h6,a{
   gap: 11.4px;
 }
 
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
 .gap-\[6px\] {
   gap: 6px;
 }
 
 .gap-12 {
   gap: 3rem;
-}
-
-.gap-2\.5 {
-  gap: 0.625rem;
 }
 
 .gap-y-8 {
@@ -1318,12 +1330,12 @@ p,h1,h2,h3,h4,h5,h6,a{
   border-right-width: 1px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-l {
+  border-left-width: 1px;
 }
 
 .border-solid {
@@ -1367,6 +1379,10 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .border-\[\#1A891766\] {
   border-color: #1A891766;
+}
+
+.border-\[\#1B21274D\] {
+  border-color: #1B21274D;
 }
 
 .border-opacity-10 {
@@ -1490,6 +1506,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   padding: 0.25rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1595,6 +1615,11 @@ p,h1,h2,h3,h4,h5,h6,a{
   padding-right: 16px;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -1608,11 +1633,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pt-\[107px\] {
@@ -1820,6 +1840,10 @@ p,h1,h2,h3,h4,h5,h6,a{
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1848,12 +1872,16 @@ p,h1,h2,h3,h4,h5,h6,a{
   line-height: 14px;
 }
 
-.leading-\[40px\] {
-  line-height: 40px;
-}
-
 .leading-5 {
   line-height: 1.25rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-\[40px\] {
+  line-height: 40px;
 }
 
 .tracking-\[0\.02em\] {
