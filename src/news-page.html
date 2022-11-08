@@ -13,35 +13,46 @@
 <body>
     <header class="w-full h-[72px] flex items-center px-[288px]">
         <div class="flex justify-between w-full items-center">
-            <div class="flex items-center gap-4">
-                <img src="/assets/GirchiLogo.svg" alt="" />
-                <h3 class="font-bold text-2xl leading-[14px] text-[#327F37]">
-                    გირჩი
-                </h3>
-            </div>
+            <a href="">
+                <div class="flex items-center gap-4">
+                    <img src="/assets/GirchiLogo.svg" alt="" />
+                    <h3 class="font-bold text-2xl leading-[14px] text-[#327F37]">
+                        გირჩი
+                    </h3>
+                </div>
+            </a>
             <div class="flex justify-center items-center gap-6">
                 <nav class="flex list-none gap-6">
-                    <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
-                        პოლიტიკოსები
-                    </li>
-                    <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
-                        ანალიტიკა
-                    </li>
+                    <a href="">
+                        <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
+                            პოლიტიკოსები
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
+                            ანალიტიკა
+                        </li>
+                    </a>
+                    <a href="">
                     <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
                         სიახლეები
-                    </li>
-                    <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
-                        პროექტები
-                    </li>
-                    <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
-                        გაზეთი
-                    </li>
+                    </li></a>
+                    <a href="">
+                        <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
+                            პროექტები
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="font-medium text-sm leading-6 text-[#000000] cursor-pointer">
+                            გაზეთი
+                        </li>
+                    </a>
                 </nav>
-                <div class="flex justify-center items-center px-6 py-2 gap-1 bg-[#1A8917] rounded-[32px]">
+                <button class="flex justify-center items-center px-6 py-2 gap-1 bg-[#1A8917] rounded-[32px]">
                     <p class="font-medium text-sm leading-6 tracking-[0.02em] text-white">
                         ავტორიზაცია
                     </p>
-                </div>
+                </button>
             </div>
         </div>
     </header>
@@ -86,47 +97,79 @@
                             <div id="panel" class="hidden overflow-hidden w-full p-2 gap-[2px]">
                                 <div
                                     class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                    <p class="font-medium text-sm leading-6 text-[#6F7680]">
-                                        სანდროს ისტორია
-                                    </p>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 12.6667V16.6667C16 17.0203 15.8595 17.3594 15.6095 17.6095C15.3594 17.8595 15.0203 18 14.6667 18H7.33333C6.97971 18 6.64057 17.8595 6.39052 17.6095C6.14048 17.3594 6 17.0203 6 16.6667V9.33333C6 8.97971 6.14048 8.64057 6.39052 8.39052C6.64057 8.14048 6.97971 8 7.33333 8H11.3333" stroke="#1A8917" stroke-width="1.5" stroke-linecap="square"/>
-                                        <path d="M14 6H18V10" stroke="#1A8917" stroke-width="1.5" stroke-linecap="square"/>
-                                        <path d="M10.666 13.3333L17.9993 6" stroke="#1A8917" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>
+                                    <a href="#" class="w-full">
+                                        <p
+                                            class="font-medium text-sm leading-6 text-[#6F7680] hover:text-[#1A8917] cursor-pointer w-full">
+                                            სანდროს ისტორია
+                                        </p>
+                                    </a>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 12.6667V16.6667C16 17.0203 15.8595 17.3594 15.6095 17.6095C15.3594 17.8595 15.0203 18 14.6667 18H7.33333C6.97971 18 6.64057 17.8595 6.39052 17.6095C6.14048 17.3594 6 17.0203 6 16.6667V9.33333C6 8.97971 6.14048 8.64057 6.39052 8.39052C6.64057 8.14048 6.97971 8 7.33333 8H11.3333"
+                                            stroke="#1A8917" stroke-width="1.5" stroke-linecap="square" />
+                                        <path d="M14 6H18V10" stroke="#1A8917" stroke-width="1.5"
+                                            stroke-linecap="square" />
+                                        <path d="M10.666 13.3333L17.9993 6" stroke="#1A8917" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
                                 </div>
                                 <div
                                     class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                    <p class="font-medium text-sm leading-6 text-[#6F7680]">
-                                        იაგოს ისტორია
-                                    </p>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 12.6667V16.6667C16 17.0203 15.8595 17.3594 15.6095 17.6095C15.3594 17.8595 15.0203 18 14.6667 18H7.33333C6.97971 18 6.64057 17.8595 6.39052 17.6095C6.14048 17.3594 6 17.0203 6 16.6667V9.33333C6 8.97971 6.14048 8.64057 6.39052 8.39052C6.64057 8.14048 6.97971 8 7.33333 8H11.3333" stroke="#1A8917" stroke-width="1.5" stroke-linecap="square"/>
-                                        <path d="M14 6H18V10" stroke="#1A8917" stroke-width="1.5" stroke-linecap="square"/>
-                                        <path d="M10.666 13.3333L17.9993 6" stroke="#1A8917" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>
+                                    <a href="#" class="w-full">
+                                        <p
+                                            class="font-medium text-sm leading-6 text-[#6F7680] w-full  hover:text-[#1A8917] cursor-pointer">
+                                            იაგოს ისტორია
+                                        </p>
+                                    </a>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 12.6667V16.6667C16 17.0203 15.8595 17.3594 15.6095 17.6095C15.3594 17.8595 15.0203 18 14.6667 18H7.33333C6.97971 18 6.64057 17.8595 6.39052 17.6095C6.14048 17.3594 6 17.0203 6 16.6667V9.33333C6 8.97971 6.14048 8.64057 6.39052 8.39052C6.64057 8.14048 6.97971 8 7.33333 8H11.3333"
+                                            stroke="#1A8917" stroke-width="1.5" stroke-linecap="square" />
+                                        <path d="M14 6H18V10" stroke="#1A8917" stroke-width="1.5"
+                                            stroke-linecap="square" />
+                                        <path d="M10.666 13.3333L17.9993 6" stroke="#1A8917" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
                                 </div>
                                 <div
                                     class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                    <p class="font-medium text-sm leading-6 text-[#6F7680]">
-                                        საბოს ისტორია
-                                    </p>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 12.6667V16.6667C16 17.0203 15.8595 17.3594 15.6095 17.6095C15.3594 17.8595 15.0203 18 14.6667 18H7.33333C6.97971 18 6.64057 17.8595 6.39052 17.6095C6.14048 17.3594 6 17.0203 6 16.6667V9.33333C6 8.97971 6.14048 8.64057 6.39052 8.39052C6.64057 8.14048 6.97971 8 7.33333 8H11.3333" stroke="#1A8917" stroke-width="1.5" stroke-linecap="square"/>
-                                        <path d="M14 6H18V10" stroke="#1A8917" stroke-width="1.5" stroke-linecap="square"/>
-                                        <path d="M10.666 13.3333L17.9993 6" stroke="#1A8917" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>
+                                    <a href="#" class="w-full">
+                                        <p
+                                            class="font-medium text-sm leading-6 w-full text-[#6F7680] hover:text-[#1A8917] cursor-pointer">
+                                            საბოს ისტორია
+                                        </p>
+                                    </a>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 12.6667V16.6667C16 17.0203 15.8595 17.3594 15.6095 17.6095C15.3594 17.8595 15.0203 18 14.6667 18H7.33333C6.97971 18 6.64057 17.8595 6.39052 17.6095C6.14048 17.3594 6 17.0203 6 16.6667V9.33333C6 8.97971 6.14048 8.64057 6.39052 8.39052C6.64057 8.14048 6.97971 8 7.33333 8H11.3333"
+                                            stroke="#1A8917" stroke-width="1.5" stroke-linecap="square" />
+                                        <path d="M14 6H18V10" stroke="#1A8917" stroke-width="1.5"
+                                            stroke-linecap="square" />
+                                        <path d="M10.666 13.3333L17.9993 6" stroke="#1A8917" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
                                 </div>
                                 <div
                                     class="flex flex-row justify-between items-center p-1.5 pl-2 gap-2 rounded-[4px] bg-[#F5F5F5]">
-                                    <p class="font-medium text-sm leading-6 text-[#6F7680]">
-                                        ლევანის ისტორია
-                                    </p>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16 12.6667V16.6667C16 17.0203 15.8595 17.3594 15.6095 17.6095C15.3594 17.8595 15.0203 18 14.6667 18H7.33333C6.97971 18 6.64057 17.8595 6.39052 17.6095C6.14048 17.3594 6 17.0203 6 16.6667V9.33333C6 8.97971 6.14048 8.64057 6.39052 8.39052C6.64057 8.14048 6.97971 8 7.33333 8H11.3333" stroke="#1A8917" stroke-width="1.5" stroke-linecap="square"/>
-                                        <path d="M14 6H18V10" stroke="#1A8917" stroke-width="1.5" stroke-linecap="square"/>
-                                        <path d="M10.666 13.3333L17.9993 6" stroke="#1A8917" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>
+                                    <a href="#" class="w-full">
+                                        <p
+                                            class="font-medium text-sm leading-6 text-[#6F7680] w-full hover:text-[#1A8917] cursor-pointer">
+                                            ლევანის ისტორია
+                                        </p>
+                                    </a>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 12.6667V16.6667C16 17.0203 15.8595 17.3594 15.6095 17.6095C15.3594 17.8595 15.0203 18 14.6667 18H7.33333C6.97971 18 6.64057 17.8595 6.39052 17.6095C6.14048 17.3594 6 17.0203 6 16.6667V9.33333C6 8.97971 6.14048 8.64057 6.39052 8.39052C6.64057 8.14048 6.97971 8 7.33333 8H11.3333"
+                                            stroke="#1A8917" stroke-width="1.5" stroke-linecap="square" />
+                                        <path d="M14 6H18V10" stroke="#1A8917" stroke-width="1.5"
+                                            stroke-linecap="square" />
+                                        <path d="M10.666 13.3333L17.9993 6" stroke="#1A8917" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -444,9 +487,11 @@
                                 ტექსტი
                                 რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
                             </p>
-                            <div class="w-full flex justify-center items-center mt-[14px]">
-                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
-                            </div>
+                            <a href="">
+                                <div class="w-full flex justify-center items-center mt-[14px]">
+                                    <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -462,9 +507,49 @@
                                 ტექსტი
                                 რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
                             </p>
-                            <div class="w-full flex justify-center items-center mt-[14px]">
-                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                            <a href="">
+                                <div class="w-full flex justify-center items-center mt-[14px]">
+                                    <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col swiper-slide  max-w-[407px]">
+                        <img src="/assets/detailed-news-page-8.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
+                            <div class="flex gap-2">
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
                             </div>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული
+                                ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <a href="">
+                                <div class="w-full flex justify-center items-center mt-[14px]">
+                                    <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col swiper-slide  max-w-[407px]">
+                        <img src="/assets/detailed-news-page-8.png" alt="">
+                        <div class="flex flex-col w-full p-5 gap-3">
+                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
+                            <div class="flex gap-2">
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
+                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
+                            </div>
+                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული
+                                ტექსტი
+                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
+                            </p>
+                            <a href="">
+                                <div class="w-full flex justify-center items-center mt-[14px]">
+                                    <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="flex flex-col swiper-slide  max-w-[407px]">
@@ -480,8 +565,10 @@
                                 რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
                             </p>
                             <div class="w-full flex justify-center items-center mt-[14px]">
-                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
-                            </div>
+                                <a href="">
+                                    <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                                </div>
+                                </a>
                         </div>
                     </div>
                     <div class="flex flex-col swiper-slide  max-w-[407px]">
@@ -496,60 +583,11 @@
                                 ტექსტი
                                 რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
                             </p>
-                            <div class="w-full flex justify-center items-center mt-[14px]">
-                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col swiper-slide  max-w-[407px]">
-                        <img src="/assets/detailed-news-page-8.png" alt="">
-                        <div class="flex flex-col w-full p-5 gap-3">
-                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
-                            <div class="flex gap-2">
-                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
-                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
-                            </div>
-                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული
-                                ტექსტი
-                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
-                            </p>
-                            <div class="w-full flex justify-center items-center mt-[14px]">
-                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col swiper-slide  max-w-[407px]">
-                        <img src="/assets/detailed-news-page-8.png" alt="">
-                        <div class="flex flex-col w-full p-5 gap-3">
-                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
-                            <div class="flex gap-2">
-                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
-                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
-                            </div>
-                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული
-                                ტექსტი
-                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
-                            </p>
-                            <div class="w-full flex justify-center items-center mt-[14px]">
-                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col swiper-slide max-w-[407px]">
-                        <img src="/assets/detailed-news-page-8.png" alt="">
-                        <div class="flex flex-col w-full p-5 gap-3">
-                            <h2 class="font-bold text-xl leading-7 text-[#1B2127]">მულტისავალუტო სისტემა</h2>
-                            <div class="flex gap-2">
-                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">გირჩის სკოლა</p>
-                                <p class="font-medium text-sm leading-5 text-[#1B2127] px-2 py-1">სხვა ტეგი</p>
-                            </div>
-                            <p class="font-normal text-base leading-6 text-[#1B2127] mt-1 ">შემთხვევითად გენერირებული
-                                ტექსტი
-                                რაც ეხმარება დიზაინერებს და რატომ არის იმის დიზაინის სხვა შენ ტექსტის გარეშე არის კი...
-                            </p>
-                            <div class="w-full flex justify-center items-center mt-[14px]">
-                                <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
-                            </div>
+                            <a href="">
+                                <div class="w-full flex justify-center items-center mt-[14px]">
+                                    <p class="font-medium text-base leading-6 py-3">სრულად ნახვა</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 

@@ -7,7 +7,7 @@ for (i = 0; i < acc.length; i++) {
     let button = this.children[0];
     console.log(button);
     let panel = this.nextElementSibling;
-    let svg = this.children[0].childNodes[4];
+    let svg = this.children[0].childNodes[3];
 
     if (panel.style.display === "block") {
       panel.style.display = "none";
