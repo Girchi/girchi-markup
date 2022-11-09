@@ -2374,6 +2374,16 @@ p,h1,h2,h3,h4,h5,h6,a{
   }
 }
 
+@media (min-width: 480px) {
+  .sm\:mr-6 {
+    margin-right: 1.5rem;
+  }
+
+  .sm\:text-\[13px\] {
+    font-size: 13px;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:my-8 {
     margin-top: 2rem;
@@ -2466,7 +2476,7 @@ p,h1,h2,h3,h4,h5,h6,a{
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 976px) {
   .lg\:block {
     display: block;
   }
