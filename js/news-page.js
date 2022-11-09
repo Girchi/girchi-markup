@@ -20,3 +20,14 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+var swiper = new Swiper(".mySwiperr", {
+  slidesPerView: 3,
+  spaceBetween: 27,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: false,
+  navigation: {
+      nextEl: ".swiper-button-nextt",
+      prevEl: ".swiper-button-prevv",
+  },
+});
