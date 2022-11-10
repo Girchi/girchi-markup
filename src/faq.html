@@ -1,19 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/output.css" rel="stylesheet">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="min-h-screen w-full bg-[#E5E5E5]" id="main-content">
-
         <!-- main div -->
-        <nav class=" bg-white py-4 px-8 shadow-md">
-            <div class="mx-auto md:flex lg:max-w-[1344px] hidden justify-between">
+        <nav class="bg-white py-4 px-8 shadow-md">
+            <div class="mx-auto hidden justify-between lg:flex lg:max-w-[1344px]">
                 <div>
                     <a href="index.html" class="flex gap-4">
                         <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +23,7 @@
                     </a>
                 </div>
                 <div class="flex">
-                    <ul class="mt-2 flex gap-[32px] text-md font-medium">
+                    <ul class="text-md mt-2 flex gap-[32px] font-medium">
                         <li>
                             <a href="#" class="text-black">პოლიტიკოსები</a>
                         </li>
@@ -42,47 +40,46 @@
                             <a href="#" class="text-black">გაზეთი</a>
                         </li>
                         <li>
-                            <a href="#" class="text-black border-b-[1px] border-lightGreen pb-[33px]">FAQ</a>
+                            <a href="#" class="border-b-[1px] border-lightGreen pb-[33px] text-black">FAQ</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <button
-                        class="ml-8 rounded-full hidden lg:block bg-greenButton py-3 px-8 text-center text-md font-medium text-white">ავტორიზაცია</button>
+                        class="text-md ml-8 hidden rounded-full bg-greenButton py-3 px-8 text-center font-medium text-white lg:block">ავტორიზაცია</button>
                 </div>
             </div>
         </nav>
 
         <!-- main div -->
         <div
-            class="mx-auto mt-[32px] pb-[118px] flex lg:max-w-[1344px] lg:w-full md:w-[720px] w-[360px] flex-row justify-center gap-[24px]">
+            class="mx-auto mt-[32px] flex w-[360px] flex-row justify-center gap-[24px] pb-[118px] md:w-[720px] lg:w-full lg:max-w-[1344px]">
             <!-- left Card -->
             <div
-                class="hidden lg:block lg:w-[318px] lg:min-h-[416px] lg:h-full rounded-[8px] shadow-[inset_0_-1px_0px_rgba(41,45,51,0.1)] bg-white">
-                <div class="flex-row gap-4 p-[16px]">
+                class="hidden rounded-[8px] bg-white shadow-[inset_0_-1px_0px_rgba(41,45,51,0.1)] lg:block lg:h-full lg:w-[318px] xl:h-[416px]">
+                <div class="flex flex-col gap-1 p-[16px]">
                     <button
-                        class="h-[48px] w-full rounded-md bg-greenButton p-[12px] text-left text-md font-medium text-white"><a
+                        class="h-[48px] w-full rounded-md bg-greenButton p-[12px] text-left text-sm font-medium leading-6 text-white"><a
                             href="#">პოპულარული კითხვები</a></button>
-                    <ul>
-                        <li class="p-[12px]"><a href="#"> სამხედრო გაწვევა</a></li>
-                        <li class="p-[12px]"><a href="#"> როგორ გავხდე პოლ</a>იტიკოსი</li>
-                        <li class="p-[12px]"><a href="#"> სხვა რანდომ თემა</a></li>
-                        <li class="p-[12px]"><a href="#"> როგორ გადავრიცხო</a> ჯედები</li>
-                        <li class="p-[12px]"><a href="#"> რამდენ ხანში იქნ</a>ება ჩემი შეკვეთა</li>
-                        <li class="p-[12px]"><a href="#"> მთიულური ხინკალი</a></li>
-                        <li class="p-[12px]"><a href="#"> როდის ჩამერიცხებ</a>ა თანხა</li>
+                    <ul class="flex flex-col gap-1 text-sm">
+                        <li class="p-3"><a href="#"> სამხედრო გაწვევა</a></li>
+                        <li class="p-3"><a href="#"> როგორ გავხდე პოლ</a>იტიკოსი</li>
+                        <li class="p-3"><a href="#"> სხვა რანდომ თემა</a></li>
+                        <li class="p-3"><a href="#"> როგორ გადავრიცხო</a> ჯედები</li>
+                        <li class="p-3"><a href="#"> რამდენ ხანში იქნ</a>ება ჩემი შეკვეთა</li>
+                        <li class="p-3"><a href="#"> მთიულური ხინკალი</a></li>
+                        <li class="p-3"><a href="#"> როდის ჩამერიცხებ</a>ა თანხა</li>
                     </ul>
                 </div>
             </div>
 
             <!-- Right Card -->
             <div id="accordion-collapse"
-                class="rounded-[8px] shadow-[inset_0_-1px_0px_rgba(41,45,51,0.1)] bg-white p-[40px] md:w-[700px] w-11/12 lg:w-[1002px]"
+                class="w-11/12 rounded-[8px] bg-white p-[40px] shadow-[inset_0_-1px_0px_rgba(41,45,51,0.1)] md:w-[700px] lg:w-[1002px]"
                 data-accordion="collapse">
                 <div class="flex flex-col gap-[32px]">
-
                     <!-- questions h1 -->
-                    <div class="flex flex-row-reverse justify-between gap-4">
+                    <div class="flex flex-row-reverse justify-between">
                         <div>
                             <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -92,21 +89,19 @@
                                     fill="#45A343" />
                             </svg>
                         </div>
-                        <div>
-                            <p class="md:text-[20px] text-[16px] font-bold leading-6 text-[#292D33]">ხშირად დასმული
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[16px] font-bold leading-6 text-lightBlack md:text-[20px]">ხშირად დასმული
                                 კითხვები</p>
-                            <p class="md:text-[14px] text-[12px] font-medium leading-6 text-[#727A82]">გაფილტრე კითხვები
-                                თემების
-                                მიხედვით ან
-                                მოძებნე სიტყვიერად</p>
+                            <p class="text-[12px] font-medium leading-6 text-[#727A82] md:text-[14px]">გაფილტრე კითხვები
+                                თემების მიხედვით ან მოძებნე სიტყვიერად</p>
                         </div>
                     </div>
 
                     <!-- search block -->
                     <div class="w-full">
-                        <div class="flex rounded-[6px] border-[1px] border-[#E6E6E6]">
+                        <div class="flex rounded-[6px] border-[1px] border-grayBorder">
                             <button class="flex items-center justify-center px-[14px] py-[4px]">
-                                <svg class="h-[13px] w-[13px] text-[#1B2127]" fill="currentColor"
+                                <svg class="text-blackText h-[13px] w-[13px]" fill="currentColor"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path
                                         d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z">
@@ -114,7 +109,7 @@
                                 </svg>
                             </button>
                             <input type="search" id="search-input"
-                                class="w-full outline-none py-[10px] border-0 pr-[16px] text-[14px] font-medium leading-6 text-[#1B2127] "
+                                class="text-blackText w-full border-0 py-[10px] pr-[16px] text-[14px] font-medium leading-6 outline-none"
                                 placeholder="დაიწყე ძიება" />
                         </div>
                     </div>
@@ -122,710 +117,726 @@
                     <!-- acordion -->
                     <div class="parentAcordion flex flex-col gap-[12px]">
                         <!-- #1 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-t border-b border-b-[#E6E6E6] border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>ავსა კარგად ვერვინ შესცვლის, თავსა ახლად ვერვინ იშობს.</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>ავსა კარგად ვერვინ შესცვლის, თავსა ახლად ვერვინ იშობს.</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- #2 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>ავსა კაცსა ავი სიტყვა ურჩევნია სულსა, გულსა?</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>ავსა კაცსა ავი სიტყვა ურჩევნია სულსა, გულსა?</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- #3 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>არ იცი, ვარდი უეკლოდ არავის მოუკრებიან!?</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>არ იცი, ვარდი უეკლოდ არავის მოუკრებიან!?</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- #4 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>არა შეჯდა მწყერი ხესა, არა იყო გვარი მისი?</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>არა შეჯდა მწყერი ხესა, არა იყო გვარი მისი?</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- #5 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>ასი ათასსა აჯობებს, თუ გამორჩევით მქმნელია?</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>ასი ათასსა აჯობებს, თუ გამორჩევით მქმნელია?</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- #6 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>განგებასა ვერვინ შეცვლის, არ-საქმნელი არ იქმნების.</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>განგებასა ვერვინ შეცვლის, არ-საქმნელი არ იქმნების.</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- #7 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>დიდი ლხინია ჭირთა თქმა, თუ კაცსა მოუხდებოდეს?</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>დიდი ლხინია ჭირთა თქმა, თუ კაცსა მოუხდებოდეს?</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- #8 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>ბევრის მდომმა ცოტაც დაკარგაო?</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>ბევრის მდომმა ცოტაც დაკარგაო?</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- #9 acord -->
-                        <div class="accordion" class="active:bg-gray-300">
-                            <button type="button"
-                                class="flex w-full items-center justify-between acordion-class text-[14px] leading-[24px] border-x border-b border-b-[#E6E6E6] rounded-[6px] border-t border-x-[#E6E6E6] border-t-[#E6E6E6] p-5 text-left color-[#1B2127] font-medium ">
-                                <span>ბებიას გამომცხვარი კვერი ტკბილია?</span>
-                                <svg data-accordion-icon
-                                    class="h-6 w-6 shrink-0 text-[#6F7680] transform notactive transition duration-500 ease-in-out"
-                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="panel" class="hidden">
-                            <div
-                                class="-translate-y-4 border-x border-b border-x-[#E6E6E6] shadow-[rgba(41,45,51,0.1)] pt-1 pb-5 px-5">
-                                <div class="pb-4 text-[12px] md:text-[14px] leading-[20px] text-[#6F7680] font-medium ">
-                                    <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს
-                                        და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული
-                                        შაბლონი წარუდგინონ
-                                        შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია,
-                                        თუ როგორი იქნება
-                                        ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
-                                        <a href="#" class="link text-[#0F62FE] inline-flex gap-2">ლინკი
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
-                                                    stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
-                                                <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="square" />
-                                                <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE" stroke-width="1.5"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </a>
-                                    </p>
-                                </div>
-                                <!-- footer-share -->
-                                <div class="flex flex-row justify-between">
-                                    <div class="flex gap-[4px]">
-                                        <div class="flex items-center pr-[7px]">
-                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
-                                                    fill="#6F7680" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            25</div>
-                                        <div
-                                            class="flex items-center text-[14px] leading-[24px] text-[#6F7680] font-medium">
-                                            წაკითხვა
-                                        </div>
+                        <div class="border rounded-[6px] border-grayBorder">
+                            <div class="accordion" class="active:bg-gray-300">
+                                <button type="button"
+                                    class="acordion-class text-blackText flex w-full items-center justify-between p-5 text-left text-[14px] font-medium leading-[24px]">
+                                    <span>ბებიას გამომცხვარი კვერი ტკბილია?</span>
+                                    <svg data-accordion-icon
+                                        class="text-lightDropBlack notactive h-6 w-6 shrink-0 transform transition duration-500 ease-in-out"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="panel" class="hidden">
+                                <div class=" px-5 pt-1 pb-5 shadow-[rgba(41,45,51,0.1)]">
+                                    <div
+                                        class="text-lightDropBlack pb-4 text-[12px] font-medium leading-[20px] md:text-[14px]">
+                                        <p>
+                                            შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                                            ნაწარმის
+                                            შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ
+                                            შემფასებელს.
+                                            ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, თუ როგორი
+                                            იქნება
+                                            ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი.
+                                            <a href="#" class="link inline-flex gap-2 text-[#0F62FE]">ლინკი
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                                                        stroke="#0F62FE" stroke-width="1.5" stroke-linecap="square" />
+                                                    <path d="M10 2H14V6" stroke="#0F62FE" stroke-width="1.5"
+                                                        stroke-linecap="square" />
+                                                    <path d="M6.6665 9.33333L13.9998 2" stroke="#0F62FE"
+                                                        stroke-width="1.5" stroke-linecap="round" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
-                                    <div class="flex gap-[4px]">
-                                        <div
-                                            class="md:flex items-center text-[14px] hidden leading-[24px] text-[#1B2127] font-medium">
-                                            კითხვის
-                                            გაზიარება</div>
-                                        <div class="flex items-center">
-                                            <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
-                                                    fill="#1B2127" />
-                                            </svg>
+                                    <!-- footer-share -->
+                                    <div class="flex flex-row justify-between">
+                                        <div class="flex gap-[4px]">
+                                            <div class="flex items-center pr-[7px]">
+                                                <svg width="17" height="12" viewBox="0 0 17 12" fill="#6F7680"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99996 11.8333C7.63319 11.8504 6.28054 11.5554 5.04496 10.9708C4.0872 10.5035 3.22717 9.85816 2.51079 9.06918C1.75199 8.25345 1.15452 7.3014 0.749959 6.26335L0.666626 6.00001L0.754126 5.73668C1.15897 4.69954 1.75516 3.74774 2.51163 2.93085C3.22774 2.14194 4.08749 1.49657 5.04496 1.02918C6.28055 0.44467 7.63319 0.149689 8.99996 0.16668C10.3667 0.149718 11.7194 0.444698 12.955 1.02918C13.9127 1.49646 14.7728 2.14184 15.4891 2.93085C16.2494 3.74548 16.847 4.69782 17.25 5.73668L17.3333 6.00001L17.2458 6.26335C15.9385 9.6665 12.6451 11.8911 8.99996 11.8333ZM8.99996 1.83335C6.16318 1.74445 3.55947 3.39593 2.43079 6.00001C3.55929 8.60426 6.16312 10.2558 8.99996 10.1667C11.8367 10.2553 14.4403 8.60394 15.5691 6.00001C14.4419 3.39466 11.8372 1.74258 8.99996 1.83335ZM8.99996 8.50001C7.79773 8.50797 6.75777 7.66448 6.51743 6.48649C6.2771 5.3085 6.90352 4.12503 8.01278 3.6614C9.12204 3.19776 10.4043 3.58346 11.0737 4.5821C11.7432 5.58074 11.6128 6.91341 10.7625 7.76335C10.2969 8.23439 9.66226 8.49965 8.99996 8.50001Z"
+                                                        fill="#6F7680" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                25</div>
+                                            <div
+                                                class="text-lightDropBlack flex items-center text-[14px] font-medium leading-[24px]">
+                                                წაკითხვა</div>
+                                        </div>
+                                        <div class="flex gap-[4px]">
+                                            <div
+                                                class="text-blackText hidden items-center text-[14px] font-medium leading-[24px] md:flex">
+                                                კითხვის გაზიარება</div>
+                                            <div class="flex items-center">
+                                                <svg width="12" height="12" viewBox="0 0 14 14" fill="#1B2127"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.6666 13.6667C9.9452 13.675 9.26148 13.3454 8.81873 12.7758C8.37598 12.2063 8.2252 11.4623 8.41123 10.7653L4.2379 8.38C3.51675 9.04069 2.45969 9.18053 1.59156 8.73007C0.723426 8.27962 0.229148 7.33482 0.354143 6.36481C0.479139 5.39479 1.19678 4.60616 2.15075 4.3905C3.10471 4.17484 4.0918 4.57808 4.6219 5.4L8.41057 3.234C8.36155 3.04879 8.33557 2.85824 8.33323 2.66667C8.32368 1.55115 9.09843 0.582098 10.1887 0.345885C11.279 0.109672 12.3853 0.671166 12.8383 1.69061C13.2913 2.71006 12.9666 3.90749 12.0605 4.55834C11.1545 5.2092 9.91607 5.13473 9.09457 4.38L4.9939 6.72334C4.98984 6.89622 4.96567 7.06804 4.9219 7.23534L9.09457 9.62C9.86274 8.91504 11.0057 8.80621 11.8932 9.35356C12.7806 9.9009 13.1963 10.9712 12.9111 11.974C12.6259 12.9769 11.7092 13.6682 10.6666 13.6667ZM10.6666 10.3333C10.1143 10.3333 9.66656 10.7811 9.66656 11.3333C9.66656 11.8856 10.1143 12.3333 10.6666 12.3333C11.2189 12.3333 11.6666 11.8856 11.6666 11.3333C11.6666 10.7811 11.2189 10.3333 10.6666 10.3333ZM2.66656 5.66667C2.11428 5.66667 1.66656 6.11439 1.66656 6.66667C1.66656 7.21896 2.11428 7.66667 2.66656 7.66667C3.21885 7.66667 3.66656 7.21896 3.66656 6.66667C3.66656 6.11439 3.21885 5.66667 2.66656 5.66667ZM10.6666 1.66667C10.1143 1.66667 9.66656 2.11439 9.66656 2.66667C9.66656 3.21896 10.1143 3.66667 10.6666 3.66667C11.2189 3.66667 11.6666 3.21896 11.6666 2.66667C11.6666 2.11439 11.2189 1.66667 10.6666 1.66667Z"
+                                                        fill="#1B2127" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
                     <!-- add questions + -->
                     <!-- Modal toggle -->
                     <div
-                        class="flex h-[40px] md:w-[178px] w-full justify-center md:justify-start rounded-full bg-[#F5F5F5] py-[8px] px-[20px]">
-                        <button class="inline-flex flex-none " onclick="toggleModal()">
+                        class="bg-grayHover flex h-[40px] w-full justify-center rounded-full py-[8px] px-[20px] md:w-[178px] md:justify-start">
+                        <button class="inline-flex flex-none" onclick="toggleModal()">
                             <p class="self-center text-[14px] font-medium leading-6">კითხვის დასმა</p>
-                            <p class="mx-[10px] self-center text-2xl">+</p>
+
+                            <p class="mx-[10px] self-center text-2xl">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.83341 6.83333V11.8333H5.16675V6.83333H0.166748V5.16667H5.16675V0.166668H6.83341V5.16667H11.8334V6.83333H6.83341Z"
+                                        fill="#292D33" />
+                                </svg>
+                            </p>
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
 
         <!-- Main modal -->
-        <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modal">
-            <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center md:block md:p-0">
+        <div class="fixed top-0 left-0 z-10 hidden w-full overflow-y-auto" id="modal">
+            <div class="flex items-center justify-center px-4 pt-4 pb-20 text-center md:block md:p-0">
                 <div class="fixed inset-0 transition-opacity">
-                    <div class="absolute inset-0 bg-gray-900 opacity-75">
-                    </div>
-                    <span class="hidden md:inline-block md:align-middle md:h-screen">&#8203;</span>
-                    <div class="inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-24 md:my-8 w-[360px] md:align-middle md:max-w-[432px] md:w-full"
-                        role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden md:inline-block md:h-screen md:align-middle">&#8203;</span>
+                    <div
+                        class="my-24 inline-block w-[360px] transform overflow-hidden rounded-lg bg-white text-left align-middle shadow-xl transition-all md:my-8 md:h-full md:max-h-[402px] md:w-full md:max-w-[432px] md:align-middle">
                         <!-- Modal header -->
                         <div class="flex items-start justify-between rounded-t border-b py-4 px-5">
                             <h3 class="text-base font-medium">შენი კითხვა</h3>
-                            <button type="button" class="text-[#6F7680]" onclick="
-                        toggleModal()"><i class="fas fa-times"></i>
+                            <button type="button" class="text-lightDropBlack" onclick="
+                        toggleModal()">
+                                <i class="fas fa-times"></i>
                                 <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -836,18 +847,18 @@
                             </button>
                         </div>
                         <!-- Modal body -->
-                        <div class="px-5 pt-[24px] pb-6">
+                        <div class="px-5 pt-[24px] pb-5">
                             <div class="flex flex-col gap-[25px]">
                                 <div class="flex">
-                                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">შეიყვანე შენი
-                                        კითხვა და გიპასუხებთ მეილზე</p>
+                                    <p class="text-sm leading-5 text-lightDropBlack">შეიყვანე შენი კითხვა
+                                        და გიპასუხებთ მეილზე</p>
                                 </div>
                                 <div>
                                     <label for="website-admin "
-                                        class="mb-2 block text-md font-medium text-gray-900 ">ელფოსტა</label>
-                                    <div class="flex border rounded-lg">
+                                        class="text-md mb-2 block text-xs font-medium text-blackText">ელფოსტა</label>
+                                    <div class="flex rounded-lg border border-grayBorder">
                                         <span
-                                            class="inline-flex items-center text-md text-gray-900 rounded-l-md gap-2 py-[10px] pl-[13px]">
+                                            class="text-md inline-flex items-center gap-2 py-[10px] pl-[13px] text-blackText">
                                             <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -856,18 +867,18 @@
                                             </svg>
                                         </span>
                                         <input type="text" id="website-admin"
-                                            class="text-gray-900 outline-0	min-w-0 w-full text-md  p-2.5 "
-                                            placeholder="შენი ელფოსტა">
+                                            class="text-md w-full min-w-0 py-2.5 px-[13px] text-blackText outline-0"
+                                            placeholder="შენი ელფოსტა" />
                                     </div>
                                 </div>
 
                                 <div class="flex flex-col gap-2">
-                                    <div class="flex justify-between">
+                                    <div class="flex justify-between text-xs">
                                         <p>კითხვა</p>
-                                        <p>0/300</p>
+                                        <p id="charNum">0/300</p>
                                     </div>
-                                    <textarea id="message" rows="2"
-                                        class="block w-full text-[#1B2127] outline-0 rounded-lg border border-[#E0E2E7] p-4 text-md"
+                                    <textarea id="message" rows="2" onkeyup="countChars(this)"
+                                        class="text-blackText block w-full rounded-lg border border-[#E0E2E7] p-[10px] text-sm outline-0 md:h-[64px]"
                                         placeholder="დაწერე შენი კითხვა"></textarea>
                                 </div>
                             </div>
@@ -875,35 +886,34 @@
                         <!-- Modal footer -->
                         <div class="flex flex-row justify-end gap-2 rounded-b border-t px-5 py-4">
                             <button type="button"
-                                class="bg-white px-5 py-2.5 text-base font-medium text-[#1B2127] focus:outline-none"
+                                class="text-blackText bg-white px-6 py-2 text-sm font-medium leading-5 focus:outline-none"
                                 onclick="
-                            toggleModal()"><i class="fas fa-times"></i>გაუქმება</button>
+                            toggleModal()">
+                                <i class="fas fa-times"></i>გაუქმება
+                            </button>
                             <button type="button"
-                                class="rounded-[32px] bg-greenButton px-4 py-2 text-center text-base font-medium text-white focus:outline-none"
-                                onclick="toggleModalSubmit()"><i class="fas fa-times"></i> კითხვის
-                                გაგზავნა</button>
+                                class="rounded-[32px] bg-greenButton px-4 py-2 text-center text-sm font-medium leading-5 text-white focus:outline-none"
+                                onclick="toggleModalSubmit()"><i class="fas fa-times"></i> კითხვის გაგზავნა</button>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
 
         <!-- submit modal -->
-        <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modalSubmit">
-            <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center md:block md:p-0">
+        <div class="fixed top-0 left-0 z-10 hidden w-full overflow-y-auto" id="modalSubmit">
+            <div class="min-height-100vh flex items-center justify-center px-4 pt-4 pb-20 text-center md:block md:p-0">
                 <div class="fixed inset-0 transition-opacity">
-                    <div class="absolute inset-0 bg-gray-900 opacity-75">
-                    </div>
-                    <span class="hidden md:inline-block md:align-middle md:h-screen">&#8203;</span>
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden md:inline-block md:h-screen md:align-middle">&#8203;</span>
                     <div
-                        class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-24 md:my-8 md:align-middle w-[360px] md:max-w-[432px] md:w-full md:h-288px">
+                        class="align-center md:h-288px my-24 inline-block w-[360px] transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all md:my-8 md:w-full md:max-w-[432px] md:align-middle">
                         <!-- Modal header -->
                         <div class="flex items-start justify-between rounded-t border-b py-4 px-5">
-                            <h3 class="text-base font-medium"> შენი კითხვა</h3>
-                            <button type="button" class="text-[#6F7680]" onclick="
-                            toggleModalSubmit()"><i class="fas fa-times"></i>
+                            <h3 class="text-base font-medium">შენი კითხვა</h3>
+                            <button type="button" class="text-lightDropBlack" onclick="
+                            toggleModalSubmit()">
+                                <i class="fas fa-times"></i>
                                 <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -933,11 +943,10 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-
                                 </div>
                                 <div class="flex">
-                                    <p class="text-base leading-relaxed text-gray-500 text-left">კითხვა
-                                        გაიგზავნა. დაელოდე ჩვენს პასუხს</p>
+                                    <p class="text-left text-base leading-relaxed text-gray-500">კითხვა გაიგზავნა.
+                                        დაელოდე ჩვენს პასუხს</p>
                                 </div>
                             </div>
                         </div>
@@ -946,11 +955,9 @@
                             <button type="button"
                                 class="rounded-[32px] bg-greenButton px-4 py-2 text-center text-base font-medium text-white focus:outline-none">გასაგებია</button>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- searching with word -->
@@ -965,14 +972,19 @@
             const listItem = document.querySelectorAll('.acordion-class');
             const parentAcordion = document.querySelector('.parentAcordion');
 
+
             listItem.forEach((item) => {
                 let text = item.textContent
+                let grandParent = item.parentElement.parentElement;
                 if (text.toLocaleLowerCase().includes(filter.toLocaleLowerCase())) {
                     item.style.display = '';
+                    grandParent.style.border = '';
+                    parentAcordion.style.gap = '';
                 }
                 else {
                     item.style.display = 'none';
-                    parentAcordion.style.gap = '0';
+                    parentAcordion.style.gap = '1px';
+                    grandParent.style.border = 'none';
                 }
             });
         }
@@ -987,30 +999,27 @@
             acc[i].addEventListener("click", function () {
                 let active = this.classList.toggle("active");
                 let button = this.children[0];
-                console.log(button);
                 let panel = this.nextElementSibling;
                 let svg = this.children[0].childNodes[3];
 
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
                     svg.classList.remove("rotate-180");
-                    button.style.borderBottomStyle = "solid";
+                    // button.style.borderBottomStyle = "solid";
 
                 } else {
                     panel.style.display = "block";
                     svg.classList.add("rotate-180");
-                    button.style.borderBottomStyle = "none";
+                    // button.style.borderBottomStyle = "none";
                 }
             });
         }
-
     </script>
 
     <!-- modal toggle -->
     <script>
         let modal1 = document.getElementById('modal');
         let modalSubmit = document.getElementById('modalSubmit');
-        console.log(modal1);
         function toggleModal() {
             modal1.classList.toggle('hidden')
         }
@@ -1022,6 +1031,18 @@
                 modal1.style.display = "";
             }
 
+        }
+    </script>
+
+    <!-- character counter -->
+    <script>
+        function countChars(obj) {
+            let maxLength = 300;
+            var strLength = obj.value.length;
+
+            if (strLength < maxLength) {
+                document.getElementById("charNum").innerHTML = strLength + '/300';
+            }
         }
     </script>
 </body>

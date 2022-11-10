@@ -3,51 +3,127 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'TBCContractica';
-    src:  url('../font/TBCContractica-Regular.ttf')
+  font-family: "TBCContractica";
+  src: url("../font/TBCContractica-Regular.ttf");
+  unicode-range: U+10D0-10F0;
 }
 
-@layer base {
-
-    p,h1,h2,h3,h4,h5,h6,a{
-        font-family: 'TBCContractica';
-    }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: TBCContractica, sans-serif;
 }
 
 .active-btn {
-    background-color: white;
-    color: #292D33;
+  background-color: white;
+  color: #292d33;
 }
 
 .label {
-    position: relative;
+  position: relative;
 }
 
 .sticky-container.active {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
 }
 
 .sticky-container.absolute {
-    position: absolute;
-    background-color: #FFFFFF;
-    transform: translateY(-100%);
-    
+  position: absolute;
+  background-color: #ffffff;
+  transform: translateY(-100%);
 }
 
-.sticky-container.active .sticky-hidden{
-    display: none;
+.sticky-container.active .sticky-hidden {
+  display: none;
 }
 
-.sticky-container.active-about{
-    position:fixed;
-    top:0;
-    z-index:1;
-    background-color: transparent;
-
+.sticky-container.active-about {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: transparent;
 }
-.sticky-container.active-about .sticky-hidden{
-    display: none;
+.sticky-container.active-about .sticky-hidden {
+  display: none;
 }
