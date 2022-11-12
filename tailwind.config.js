@@ -10,6 +10,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        'midGreen' : '#1A891766',
+        'lightBlue' : '#4D73FA',
+        'midBlack' : '#121212',
         'lightGray' : '#727A82', // Gray text color
         'lightGrayButton' : '#F3F3F4',//Gray buttons
         'midGray' : '#F5F5F7', // Background color
