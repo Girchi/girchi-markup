@@ -25,6 +25,9 @@ module.exports = {
         'backgroundBlue': '#2F69FF0A',
         'lightBlack' : '#292D33', // Main black color
         'progress' : '#2f69ff0a', //Color of progress bar
+      },
+      boxShadow: {
+        'headShadow': '0px 1px 1px rgba(111, 118, 128, 0.08), 0px 3px 4px rgba(27, 33, 39, 0.04)'
       }
     },
   },
