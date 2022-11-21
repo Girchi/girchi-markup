@@ -37,17 +37,17 @@ function right() {
   }
   console.log(page);
 
-  circle[0].className = "w-1.5 h-1.5 bg-[#1A891766] m-3  rounded-[50%] circle";
+  circle[0].className = "w-1.5 h-1.5 bg-[#1A891766] m-1.5  rounded-[50%] circle";
   for (
     let i = 0;
     i < document.getElementsByClassName("circle").length - 1;
     i++
   ) {
     document.getElementsByClassName("circle")[i].className =
-      "w-1.5 h-1.5 bg-[#E6E6E6] m-3  rounded-[50%] circle";
+      "w-1.5 h-1.5 bg-[#E6E6E6] m-1.5  rounded-[50%] circle";
   }
   document.getElementById(page).className =
-    "w-1.5 h-1.5 bg-circle m-3  rounded-[50%] circle";
+    "w-1.5 h-1.5 bg-circle m-1.5  rounded-[50%] circle";
 }
 
 // function for slider selft click
@@ -60,10 +60,10 @@ function left() {
   console.log(page);
   for (let i = 0; i < document.getElementsByClassName("circle").length; i++) {
     document.getElementsByClassName("circle")[i].className =
-      "w-1.5 h-1.5 bg-[#E6E6E6] m-3  rounded-[50%] circle";
+      "w-1.5 h-1.5 bg-[#E6E6E6] m-1.5  rounded-[50%] circle";
   }
   document.getElementById(page).className =
-    "w-1.5 h-1.5 bg-circle m-3  rounded-[50%] circle";
+    "w-1.5 h-1.5 bg-circle m-1.5  rounded-[50%] circle";
 }
 
 // start logic for slider dots
@@ -79,10 +79,10 @@ for (let i = 0; i < NumOfScroll; i++) {
   circle.id = i;
   var element = document.getElementById("html");
   element.appendChild(circle);
-  circle.className = "w-1.5 h-1.5 bg-[#E6E6E6] m-3  rounded-[50%] circle";
+  circle.className = "w-1.5 h-1.5 bg-[#E6E6E6] m-1.5  rounded-[50%] circle";
 }
 let circle = document.getElementsByClassName("circle");
-circle[0].className = "w-1.5 h-1.5 bg-circle m-3  rounded-[50%] circle";
+circle[0].className = "w-1.5 h-1.5 bg-circle m-1.5  rounded-[50%] circle";
 
 for (let button of circle) {
   button.addEventListener("click", buttonPressed);
