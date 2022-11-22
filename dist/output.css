@@ -649,10 +649,6 @@ p,h1,h2,h3,h4,h5,h6,a{
   margin: 0px;
 }
 
-.m-3 {
-  margin: 0.75rem;
-}
-
 .m-1\.5 {
   margin: 0.375rem;
 }
@@ -1057,10 +1053,6 @@ p,h1,h2,h3,h4,h5,h6,a{
 
 .min-w-full {
   min-width: 100%;
-}
-
-.min-w-\[408px\] {
-  min-width: 408px;
 }
 
 .min-w-\[407px\] {
