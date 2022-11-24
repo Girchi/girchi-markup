@@ -26,55 +26,50 @@ let NumOfNews = child.length;
 let NumOfScroll = Math.ceil(NumOfNews / 3);
 let html = document.getElementById("html");
 let fullhtml = [];
-
+let circle = document.getElementsByClassName("circle");
+let scrolll = 0
 // function for slider right click
 function right() {
-  container.scrollLeft += 1293;
+  scrolll += 1293
+  if(scrolll >= NumOfScroll * 1293){
+    scrolll = (NumOfScroll-1) * 1293
+  }
+  container.scrollLeft = scrolll
   let page = Math.ceil(container.scrollLeft / 1293) + 1;
   if (page > circle.length - 1) {
     page = circle.length - 1;
   }
-  circle[0].className =
-    "w-1.5 h-1.5 bg-[#1A891766] m-1.5  rounded-[50%] circle cursor-pointer";
-  for (
-    let i = 0;
-    i < document.getElementsByClassName("circle").length - 1;
-    i++
-  ) {
-    document.getElementsByClassName("circle")[i].className =
-      "w-1.5 h-1.5 bg-[#E6E6E6] m-1.5  rounded-[50%] circle cursor-pointer";
-  }
-  document.getElementById(page).className =
-    "w-1.5 h-1.5 bg-circle m-1.5  rounded-[50%] circle cursor-pointer";
 }
 
 // function for slider selft click
 function left() {
-  container.scrollLeft -= 1293;
+  scrolll -= 1293
+  if(scrolll <= 0){
+      scrolll = 0
+  }
+  container.scrollLeft = scrolll
   let page = Math.ceil(container.scrollLeft / 1293) - 1;
   if (page < 0) {
     page = 0;
   }
+
+}
+
+container.addEventListener("scroll", function(){
   for (let i = 0; i < document.getElementsByClassName("circle").length; i++) {
     document.getElementsByClassName("circle")[i].className =
       "w-1.5 h-1.5 bg-[#E6E6E6] m-1.5  rounded-[50%] circle cursor-pointer";
   }
-  document.getElementById(page).className =
-    "w-1.5 h-1.5 bg-circle m-1.5  rounded-[50%] circle cursor-pointer";
-}
-
+  let a = Math.round(container.scrollLeft / 1293)
+  document.getElementsByClassName("circle")[a].className = "w-1.5 h-1.5 bg-circle m-1.5  rounded-[50%] circle cursor-pointer"
+})
 // start logic for slider dots
 let buttons = document.getElementsByClassName("button");
 let gg = [buttons];
 const buttonPressed = (e) => {
-  container.scrollLeft = e.target.id * 1293;
+  scrolll = e.target.id * 1293
+  container.scrollLeft = scrolll
   let value = e.target.id * 1293;
-  for (let i = 0; i < document.getElementsByClassName("circle").length; i++) {
-    document.getElementsByClassName("circle")[i].className =
-      "w-1.5 h-1.5 bg-[#E6E6E6] m-1.5  rounded-[50%] circle cursor-pointer";
-  }
-  e.target.className =
-    "w-1.5 h-1.5 bg-circle m-1.5  rounded-[50%] circle cursor-pointer";
 };
 
 for (let i = 0; i < NumOfScroll; i++) {
@@ -85,7 +80,6 @@ for (let i = 0; i < NumOfScroll; i++) {
   circle.className =
     "w-1.5 h-1.5 bg-[#E6E6E6] m-1.5  rounded-[50%] circle cursor-pointer";
 }
-let circle = document.getElementsByClassName("circle");
 circle[0].className =
   "w-1.5 h-1.5 bg-circle m-1.5  rounded-[50%] circle cursor-pointer";
 
